@@ -1,0 +1,172 @@
+baseURL: "https://blog.rajporus.me"
+languageCode: "fr-FR"
+title: "Porus — Dev qui touche à tout"
+theme: hugo-profile
+
+defaultContentLanguage: "fr"
+defaultContentLanguageInSubdir: false
+
+languages:
+  fr:
+    languageName: "Français"
+    weight: 1
+    contentDir: "content/fr"
+    menu:
+      main:
+        - identifier: projects
+          name: Projets
+          title: Mes projets
+          url: /fr/projects
+          weight: 1
+        - identifier: blog
+          name: Articles
+          title: Articles & tutos
+          url: /fr/blogs
+          weight: 2
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 9
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Porus — Dev qui touche à tout"
+  description: "Développeur full-stack de 25 ans. Je construis des trucs cools, je casse des trucs, j'apprends tout le temps."
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  # 🎨 Palette de couleurs personnalisée
+  color:
+    textColor: "#1F2937"
+    secondaryTextColor: "#4B5563"
+    textLinkColor: "#2EAD67"
+    backgroundColor: "#FAFCFA"
+    secondaryBackgroundColor: "#E8F5EC"
+    primaryColor: "#2EAD67"
+    secondaryColor: "#F4B942"
+    darkmode:
+      textColor: "#E4E6EB"
+      secondaryTextColor: "#B0B3B8"
+      textLinkColor: "#2EAD67"
+      backgroundColor: "#18191A"
+      secondaryBackgroundColor: "#1F2937"
+      primaryColor: "#2EAD67"
+      secondaryColor: "#F4B942"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "🏠 Porus"
+    disableSearch: false
+    searchPlaceholder: "Rechercher..."
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero — Frontpage
+  hero:
+    enable: true
+    intro: "Salut, je suis"
+    title: "Porus 👋"
+    subtitle: "Développeur full-stack • 25 ans • Je touche à tout"
+    content: |-
+      Développeur passionné qui aime explorer, construire et casser des trucs.  
+      Stack agnostique — du frontend React à l'embarqué, en passant par le DevOps, la cybersécurité et l'IA.  
+      Si ça compile (ou pas), ça m'intéresse.
+    # roundImage: true
+    button:
+      enable: true
+      name: "Voir mes projets"
+      url: "/fr/projects"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/RajPorus19
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/rajporus
+
+  # Projects (config-based, shown on homepage)
+  projects:
+    enable: true
+    title: "🚀 Projets récents"
+    items: []
+    # Projects are defined as markdown content in content/fr/projects/
+    # This makes them browseable, searchable, and sortable on the dedicated page
+
+  # Contact
+  contact:
+    enable: true
+    content: |-
+      Tu veux collaborer sur un projet ? Me proposer un défi ?  
+      Ou juste discuter tech ? Ma boîte de réception est toujours ouverte !
+    btnName: "Me contacter"
+    btnLink: "mailto:rajporus19@gmail.com"
+
+  footer:
+    recentPosts:
+      path: "fr/blogs"
+      count: 3
+      title: "Derniers articles"
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/RajPorus19
+      linkedin: https://linkedin.com/in/rajporus19
+      twitter: https://x.com/rajporus19
+
+  # List pages
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min de lecture"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Lire"
+    toc: "Sommaire"
+    copyright: "Tous droits réservés"
+    emailText: "Découvre ce site"
+
+  datesFormat:
+    article: "2 Jan 2006"
+    articleList: "2 Jan 2006"
+    articleRecent: "2 Jan 2006"

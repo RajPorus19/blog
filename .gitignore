@@ -1,0 +1,5 @@
+*.md
+GITHUB_TOKEN_FOR_BLOG=le_token_est_dans_env
+public/
+# Environment
+GITHUB_TOKEN_FOR_BLOG=*

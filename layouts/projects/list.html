@@ -1,0 +1,171 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+<link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<link rel="stylesheet" href="{{ (printf "%scss/list.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<script defer src="{{ (printf "%sfontawesome-6/all-6.4.2.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+{{ end }}
+
+{{ define "title" }}
+{{.Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container pt-5" id="projects">
+    <h2 class="text-center pb-2">{{.Title}}</h2>
+
+    <!-- Search + Sort + Filter Bar -->
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-4 mb-2 mb-md-0">
+            <input type="text" id="projectSearch" class="form-control" placeholder="🔍 Rechercher un projet..." onkeyup="filterProjects()">
+        </div>
+        <div class="col-md-3 mb-2 mb-md-0">
+            <select id="sortProjects" class="form-select" onchange="sortProjects()">
+                <option value="date-desc">📅 Plus récent</option>
+                <option value="date-asc">📅 Plus ancien</option>
+                <option value="name-asc">📝 A-Z</option>
+                <option value="name-desc">📝 Z-A</option>
+            </select>
+        </div>
+        <div class="col-md-5 mb-2 mb-md-0" id="tagFilters">
+            <div class="d-flex flex-wrap gap-1" id="tagList">
+                {{ $tags := slice }}
+                {{ range .Pages }}
+                    {{ range .Params.tags }}
+                        {{ if not (in $tags .) }}
+                            {{ $tags = $tags | append . }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                {{ range $tags }}
+                    <span class="badge tag-filter" data-tag="{{ . }}" onclick="toggleTag('{{ . }}')"
+                          style="cursor:pointer; background:#E8F5EC; color:#1F2937; padding:6px 12px; font-size:0.85rem; border:1px solid #2EAD67; border-radius:20px; transition:all 0.2s;">
+                        {{ . }}
+                    </span>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="projectGrid">
+        {{ range .Pages.ByDate.Reverse }}
+        <div class="col-lg-4 col-md-6 my-3 project-card"
+             data-title="{{ .Title | lower }}"
+             data-tags='{{ delimit (.Params.tags | default slice) "," }}'
+             data-date="{{ .Date.Unix }}">
+            <div class="card my-3 h-100" title="{{ .Title }}">
+                <div class="card-head">
+                    <img class="card-img-top" src="{{ .Params.image | default "/images/project-placeholder.svg" }}" alt="{{ .Title }}" style="height:200px; object-fit:cover;">
+                </div>
+                <div class="card-body bg-transparent p-3">
+                    <div class="pb-2 bg-transparent">
+                        {{ range .Params.badges }}
+                        <span class="badge" style="background:#2EAD67; color:white;">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    <h5 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h5>
+                    <div class="card-text bg-transparent secondary-font" style="font-size:0.9rem;">
+                        {{ .Summary | truncate 120 | safeHTML }}
+                    </div>
+                    <small class="text-muted">📅 {{ .Date.Format "Jan 2006" }}</small>
+                </div>
+                <div class="card-footer py-3 bg-transparent border-top-0">
+                    {{ range .Params.links }}
+                    <span class="m-1 mx-2">
+                        <a href="{{ .url }}" target="_blank" style="color:#2EAD67;">
+                            <i class="{{ .icon }}"></i>
+                        </a>
+                    </span>
+                    {{ end }}
+                    <span class="float-end">
+                        <a class="btn btn-sm" href="{{ .RelPermalink }}" style="background:#2EAD67; color:white; border-radius:20px;">
+                            En savoir plus →
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-auto m-3">
+            {{template "_internal/pagination.html" . }}
+        </div>
+    </div>
+</div>
+
+<style>
+.tag-filter.active {
+    background: #2EAD67 !important;
+    color: white !important;
+}
+.tag-filter:hover {
+    background: #2EAD67 !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+#projectSearch {
+    border: 2px solid #E8F5EC;
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+}
+#projectSearch:focus {
+    border-color: #2EAD67;
+    box-shadow: 0 0 0 0.2rem rgba(46, 173, 103, 0.15);
+}
+#sortProjects {
+    border: 2px solid #E8F5EC;
+    border-radius: 20px;
+    padding: 10px 16px;
+}
+</style>
+
+<script>
+let activeTags = new Set();
+
+function filterProjects() {
+    let search = document.getElementById('projectSearch').value.toLowerCase().trim();
+    let cards = document.querySelectorAll('.project-card');
+    cards.forEach(card => {
+        let title = card.dataset.title;
+        let cardTags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+        let matchesSearch = !search || title.includes(search);
+        let matchesTags = activeTags.size === 0 || cardTags.some(t => activeTags.has(t));
+        card.style.display = (matchesSearch && matchesTags) ? '' : 'none';
+    });
+}
+
+function toggleTag(tag) {
+    let el = document.querySelector(`.tag-filter[data-tag="${tag}"]`);
+    if (activeTags.has(tag)) {
+        activeTags.delete(tag);
+        el.classList.remove('active');
+    } else {
+        activeTags.add(tag);
+        el.classList.add('active');
+    }
+    filterProjects();
+}
+
+function sortProjects() {
+    let sort = document.getElementById('sortProjects').value;
+    let grid = document.getElementById('projectGrid');
+    let cards = Array.from(grid.querySelectorAll('.project-card'));
+    cards.sort((a, b) => {
+        let dateA = parseInt(a.dataset.date);
+        let dateB = parseInt(b.dataset.date);
+        let titleA = a.dataset.title;
+        let titleB = b.dataset.title;
+        switch(sort) {
+            case 'date-desc': return dateB - dateA;
+            case 'date-asc': return dateA - dateB;
+            case 'name-asc': return titleA.localeCompare(titleB);
+            case 'name-desc': return titleB.localeCompare(titleA);
+            default: return 0;
+        }
+    });
+    cards.forEach(c => grid.appendChild(c));
+}
+</script>
+{{ end }}
