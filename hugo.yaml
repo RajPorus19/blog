@@ -36,10 +36,7 @@ languages:
         intro: "Salut, je suis"
         title: "Porus 👋"
         subtitle: "Dev full-stack • Curiosité infinie"
-        content: |-
-          Dev curieux qui aime builder, explorer et déconstruire des trucs.  
-          Stack agnostique : React, embarqué, DevOps, cybersécurité, IA... si ça existe, ça m'intrigue.  
-          Si ça compile (ou pas), ça m'intéresse.
+        content: "Dev curieux qui aime build, explorer et déconstruire des trucs."
         button:
           enable: true
           name: "Voir mes projets"
@@ -108,10 +105,7 @@ languages:
         intro: "Hi, I'm"
         title: "Porus 👋"
         subtitle: "Full-stack dev • Infinite curiosity"
-        content: |-
-          Curious dev who loves building, exploring, and breaking things down.  
-          Stack agnostic: React, embedded, DevOps, cybersecurity, AI... if it exists, I wanna know.  
-          If it compiles (or doesn't), I'm interested.
+        content: "Curious dev who loves to build, explore and break things down."
         button:
           enable: true
           name: "See my projects"
