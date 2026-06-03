@@ -2,7 +2,7 @@
 title: "Project 2"
 description: "Duis aute irure dolor in reprehenderit in voluptate"
 date: 2026-05-10
-image: "/images/project-placeholder.svg"
+image: "/blog/images/project-placeholder.svg"
 badges:
   - "Python"
   - "Data"

@@ -2,7 +2,7 @@
 title: "Projet 1"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 date: 2026-05-15
-image: "/images/project-placeholder.svg"
+image: "/blog/images/project-placeholder.svg"
 badges:
   - "Go"
   - "Backend"

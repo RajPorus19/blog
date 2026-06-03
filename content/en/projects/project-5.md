@@ -2,7 +2,7 @@
 title: "Project 5"
 description: "Nam libero tempore cum soluta nobis est eligendi optio"
 date: 2026-03-20
-image: "/images/project-placeholder.svg"
+image: "/blog/images/project-placeholder.svg"
 badges:
   - "DevOps"
   - "Docker"

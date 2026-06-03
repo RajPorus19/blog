@@ -2,7 +2,7 @@
 title: "Projet 3"
 description: "At vero eos et accusamus et iusto odio dignissimos ducimus"
 date: 2026-04-25
-image: "/images/project-placeholder.svg"
+image: "/blog/images/project-placeholder.svg"
 badges:
   - "Rust"
   - "CLI"

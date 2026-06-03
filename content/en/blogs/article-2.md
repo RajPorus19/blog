@@ -2,7 +2,7 @@
 title: "Article 2 — Dolor Sit Amet"
 description: "Duis aute irure dolor in reprehenderit in voluptate"
 date: 2026-05-10
-image: "/images/project-placeholder.svg"
+image: "/blog/images/project-placeholder.svg"
 tags:
   - "dev"
   - "go"

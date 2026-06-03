@@ -16,12 +16,12 @@ languages:
         - identifier: projects
           name: Projets
           title: Mes projets
-          url: /fr/projects
+          url: /blog/fr/projects
           weight: 1
         - identifier: blog
           name: Articles
           title: Articles & tutos
-          url: /fr/blogs
+          url: /blog/fr/blogs
           weight: 2
     params:
       title: "Porus | Dev curieux"
@@ -31,6 +31,8 @@ languages:
         searchPlaceholder: "Rechercher..."
       hero:
         enable: true
+        image: "/blog/images/avatar.svg"
+        roundImage: true
         intro: "Salut, je suis"
         title: "Porus 👋"
         subtitle: "Dev full-stack • Curiosité infinie"
@@ -41,7 +43,7 @@ languages:
         button:
           enable: true
           name: "Voir mes projets"
-          url: "/fr/projects"
+          url: "/blog/fr/projects"
           download: false
           newPage: false
         socialLinks:
@@ -86,12 +88,12 @@ languages:
         - identifier: projects
           name: Projects
           title: My projects
-          url: /en/projects
+          url: /blog/en/projects
           weight: 1
         - identifier: blog
           name: Articles
           title: Articles & tutorials
-          url: /en/blogs
+          url: /blog/en/blogs
           weight: 2
     params:
       title: "Porus | Curious dev"
@@ -101,6 +103,8 @@ languages:
         searchPlaceholder: "Search..."
       hero:
         enable: true
+        image: "/blog/images/avatar.svg"
+        roundImage: true
         intro: "Hi, I'm"
         title: "Porus 👋"
         subtitle: "Full-stack dev • Infinite curiosity"
@@ -111,7 +115,7 @@ languages:
         button:
           enable: true
           name: "See my projects"
-          url: "/en/projects"
+          url: "/blog/en/projects"
           download: false
           newPage: false
         socialLinks:
@@ -167,10 +171,14 @@ markup:
       unsafe: true
 
 params:
-  favicon: "/fav.png"
+  favicon: "/blog/fav.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
+
+  hero:
+    bottomImage:
+      enable: false
 
   # 🎨 Palette de couleurs personnalisée (shared across languages)
   color:

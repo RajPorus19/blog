@@ -2,7 +2,7 @@
 title: "Article 1 — Lorem Ipsum"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 date: 2026-05-20
-image: "/images/project-placeholder.svg"
+image: "/blog/images/project-placeholder.svg"
 tags:
   - "tech"
   - "tutorial"

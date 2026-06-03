@@ -2,7 +2,7 @@
 title: "Project 4"
 description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur"
 date: 2026-04-10
-image: "/images/project-placeholder.svg"
+image: "/blog/images/project-placeholder.svg"
 badges:
   - "JavaScript"
   - "React"
