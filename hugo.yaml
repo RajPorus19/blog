@@ -1,6 +1,6 @@
 baseURL: "https://rajporus19.github.io/blog"
 languageCode: "fr-FR"
-title: "Porus — Dev qui touche à tout"
+title: "Porus | Dev curieux"
 theme: hugo-profile
 
 defaultContentLanguage: "fr"
@@ -24,8 +24,8 @@ languages:
           url: /fr/blogs
           weight: 2
     params:
-      title: "Porus — Dev qui touche à tout"
-      description: "Développeur full-stack de 25 ans. Je construis des trucs cools, je casse des trucs, j'apprends tout le temps."
+      title: "Porus | Dev curieux"
+      description: "Dev full-stack qui construit, explore et apprend. Stack agnostique, curiosité infinie."
       navbar:
         brandName: "🏠 Porus"
         searchPlaceholder: "Rechercher..."
@@ -33,10 +33,10 @@ languages:
         enable: true
         intro: "Salut, je suis"
         title: "Porus 👋"
-        subtitle: "Développeur full-stack • 25 ans • Je touche à tout"
+        subtitle: "Dev full-stack • Curiosité infinie"
         content: |-
-          Développeur passionné qui aime explorer, construire et casser des trucs.  
-          Stack agnostique — du frontend React à l'embarqué, en passant par le DevOps, la cybersécurité et l'IA.  
+          Dev curieux qui aime builder, explorer et déconstruire des trucs.  
+          Stack agnostique : React, embarqué, DevOps, cybersécurité, IA... si ça existe, ça m'intrigue.  
           Si ça compile (ou pas), ça m'intéresse.
         button:
           enable: true
@@ -94,8 +94,8 @@ languages:
           url: /en/blogs
           weight: 2
     params:
-      title: "Porus — Dev who does it all"
-      description: "25yo full-stack developer. I build cool stuff, break things, and learn constantly."
+      title: "Porus | Curious dev"
+      description: "Full-stack dev who builds, explores and learns. Stack agnostic, infinite curiosity."
       navbar:
         brandName: "🏠 Porus"
         searchPlaceholder: "Search..."
@@ -103,10 +103,10 @@ languages:
         enable: true
         intro: "Hi, I'm"
         title: "Porus 👋"
-        subtitle: "Full-stack developer • 25 • I do it all"
+        subtitle: "Full-stack dev • Infinite curiosity"
         content: |-
-          Passionate developer who loves exploring, building, and breaking things.  
-          Stack agnostic — from React frontend to embedded systems, DevOps, cybersecurity and AI.  
+          Curious dev who loves building, exploring, and breaking things down.  
+          Stack agnostic: React, embedded, DevOps, cybersecurity, AI... if it exists, I wanna know.  
           If it compiles (or doesn't), I'm interested.
         button:
           enable: true
