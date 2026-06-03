@@ -16,12 +16,12 @@ languages:
         - identifier: projects
           name: Projets
           title: Mes projets
-          url: /fr/projects
+          url: /projects
           weight: 1
         - identifier: blog
           name: Articles
           title: Articles & tutos
-          url: /fr/blogs
+          url: /blogs
           weight: 2
     params:
       title: "Porus | Dev curieux"
@@ -43,7 +43,7 @@ languages:
         button:
           enable: true
           name: "Voir mes projets"
-          url: "/blog/fr/projects"
+          url: "/blog/projects"
           download: false
           newPage: false
         socialLinks:
