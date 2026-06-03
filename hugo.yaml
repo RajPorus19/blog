@@ -177,11 +177,11 @@ params:
   # 🎨 Green theme — fixed contrast
   color:
     textColor: "#1a2e1a"
-    secondaryTextColor: "#2d4a2d"
+    secondaryTextColor: "#ffffff"
     backgroundColor: "#f0fdf4"
     secondaryBackgroundColor: "#dcfce7"
     primaryColor: "#16a34a"
-    secondaryColor: "#166534"
+    secondaryColor: "#22c55e"
 
     darkmode:
       textColor: "#e8f5e9"
