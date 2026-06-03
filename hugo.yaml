@@ -174,22 +174,22 @@ params:
     bottomImage:
       enable: false
 
-  # 🎨 Dark green theme
+  # 🎨 Green theme — fixed contrast
   color:
-    textColor: "#e8f5e9"
-    secondaryTextColor: "#a5d6a7"
-    backgroundColor: "#0d1a0d"
-    secondaryBackgroundColor: "#132213"
-    primaryColor: "#22c55e"
-    secondaryColor: "#16a34a"
+    textColor: "#1a2e1a"
+    secondaryTextColor: "#2d4a2d"
+    backgroundColor: "#f0fdf4"
+    secondaryBackgroundColor: "#dcfce7"
+    primaryColor: "#16a34a"
+    secondaryColor: "#166534"
 
     darkmode:
       textColor: "#e8f5e9"
-      secondaryTextColor: "#a5d6a7"
-      backgroundColor: "#0a120a"
-      secondaryBackgroundColor: "#0f1a0f"
+      secondaryTextColor: "#bbf7d0"
+      backgroundColor: "#1a2e1a"
+      secondaryBackgroundColor: "#162716"
       primaryColor: "#4ade80"
-      secondaryColor: "#22c55e"
+      secondaryColor: "#166534"
 
   font:
     fontSize: 1rem
