@@ -1,4 +1,4 @@
-baseURL: "https://blog.rajporus.me"
+baseURL: "https://rajporus19.github.io/blog"
 languageCode: "fr-FR"
 title: "Porus — Dev qui touche à tout"
 theme: hugo-profile
@@ -23,6 +23,129 @@ languages:
           title: Articles & tutos
           url: /fr/blogs
           weight: 2
+    params:
+      title: "Porus — Dev qui touche à tout"
+      description: "Développeur full-stack de 25 ans. Je construis des trucs cools, je casse des trucs, j'apprends tout le temps."
+      navbar:
+        brandName: "🏠 Porus"
+        searchPlaceholder: "Rechercher..."
+      hero:
+        enable: true
+        intro: "Salut, je suis"
+        title: "Porus 👋"
+        subtitle: "Développeur full-stack • 25 ans • Je touche à tout"
+        content: |-
+          Développeur passionné qui aime explorer, construire et casser des trucs.  
+          Stack agnostique — du frontend React à l'embarqué, en passant par le DevOps, la cybersécurité et l'IA.  
+          Si ça compile (ou pas), ça m'intéresse.
+        button:
+          enable: true
+          name: "Voir mes projets"
+          url: "/fr/projects"
+          download: false
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/RajPorus19
+            - icon: fab fa-linkedin
+              url: https://linkedin.com/in/rajporus
+      projects:
+        enable: true
+        title: "🚀 Projets récents"
+        items: []
+      contact:
+        enable: true
+        content: |-
+          Tu veux collaborer sur un projet ? Me proposer un défi ?  
+          Ou juste discuter tech ? Ma boîte de réception est toujours ouverte !
+        btnName: "Me contacter"
+        btnLink: "mailto:rajporus19@gmail.com"
+      footer:
+        recentPosts:
+          path: "fr/blogs"
+          count: 3
+          title: "Derniers articles"
+          enable: true
+          disableFeaturedImage: false
+      terms:
+        read: "Lire"
+        toc: "Sommaire"
+        copyright: "Tous droits réservés"
+        emailText: "Découvre ce site"
+      singlePages:
+        readTime:
+          content: "min de lecture"
+
+  en:
+    languageName: "English"
+    weight: 2
+    contentDir: "content/en"
+    menu:
+      main:
+        - identifier: projects
+          name: Projects
+          title: My projects
+          url: /en/projects
+          weight: 1
+        - identifier: blog
+          name: Articles
+          title: Articles & tutorials
+          url: /en/blogs
+          weight: 2
+    params:
+      title: "Porus — Dev who does it all"
+      description: "25yo full-stack developer. I build cool stuff, break things, and learn constantly."
+      navbar:
+        brandName: "🏠 Porus"
+        searchPlaceholder: "Search..."
+      hero:
+        enable: true
+        intro: "Hi, I'm"
+        title: "Porus 👋"
+        subtitle: "Full-stack developer • 25 • I do it all"
+        content: |-
+          Passionate developer who loves exploring, building, and breaking things.  
+          Stack agnostic — from React frontend to embedded systems, DevOps, cybersecurity and AI.  
+          If it compiles (or doesn't), I'm interested.
+        button:
+          enable: true
+          name: "See my projects"
+          url: "/en/projects"
+          download: false
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/RajPorus19
+            - icon: fab fa-linkedin
+              url: https://linkedin.com/in/rajporus
+      projects:
+        enable: true
+        title: "🚀 Recent projects"
+        items: []
+      contact:
+        enable: true
+        content: |-
+          Want to collaborate on a project? Challenge me with a new idea?  
+          Or just talk tech? My inbox is always open!
+        btnName: "Contact me"
+        btnLink: "mailto:rajporus19@gmail.com"
+      footer:
+        recentPosts:
+          path: "en/blogs"
+          count: 3
+          title: "Recent posts"
+          enable: true
+          disableFeaturedImage: false
+      terms:
+        read: "Read"
+        toc: "Table of Contents"
+        copyright: "All rights reserved"
+        emailText: "Check out this site"
+      singlePages:
+        readTime:
+          content: "min read"
 
 outputs:
   home:
@@ -44,14 +167,12 @@ markup:
       unsafe: true
 
 params:
-  title: "Porus — Dev qui touche à tout"
-  description: "Développeur full-stack de 25 ans. Je construis des trucs cools, je casse des trucs, j'apprends tout le temps."
   favicon: "/fav.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
 
-  # 🎨 Palette de couleurs personnalisée
+  # 🎨 Palette de couleurs personnalisée (shared across languages)
   color:
     textColor: "#1F2937"
     secondaryTextColor: "#4B5563"
@@ -77,9 +198,7 @@ params:
 
   navbar:
     align: ms-auto
-    brandName: "🏠 Porus"
     disableSearch: false
-    searchPlaceholder: "Rechercher..."
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -92,79 +211,20 @@ params:
       disableAchievements: true
       disableContact: false
 
-  # Hero — Frontpage
-  hero:
-    enable: true
-    intro: "Salut, je suis"
-    title: "Porus 👋"
-    subtitle: "Développeur full-stack • 25 ans • Je touche à tout"
-    content: |-
-      Développeur passionné qui aime explorer, construire et casser des trucs.  
-      Stack agnostique — du frontend React à l'embarqué, en passant par le DevOps, la cybersécurité et l'IA.  
-      Si ça compile (ou pas), ça m'intéresse.
-    # roundImage: true
-    button:
-      enable: true
-      name: "Voir mes projets"
-      url: "/fr/projects"
-      download: false
-      newPage: false
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/RajPorus19
-        - icon: fab fa-linkedin
-          url: https://linkedin.com/in/rajporus
+  socialNetworks:
+    github: https://github.com/RajPorus19
+    linkedin: https://linkedin.com/in/rajporus19
+    twitter: https://x.com/rajporus19
 
-  # Projects (config-based, shown on homepage)
-  projects:
-    enable: true
-    title: "🚀 Projets récents"
-    items: []
-    # Projects are defined as markdown content in content/fr/projects/
-    # This makes them browseable, searchable, and sortable on the dedicated page
-
-  # Contact
-  contact:
-    enable: true
-    content: |-
-      Tu veux collaborer sur un projet ? Me proposer un défi ?  
-      Ou juste discuter tech ? Ma boîte de réception est toujours ouverte !
-    btnName: "Me contacter"
-    btnLink: "mailto:rajporus19@gmail.com"
-
-  footer:
-    recentPosts:
-      path: "fr/blogs"
-      count: 3
-      title: "Derniers articles"
-      enable: true
-      disableFeaturedImage: false
-    socialNetworks:
-      github: https://github.com/RajPorus19
-      linkedin: https://linkedin.com/in/rajporus19
-      twitter: https://x.com/rajporus19
-
-  # List pages
   listPages:
     disableFeaturedImage: false
 
-  # Single pages
   singlePages:
     socialShare: true
-    readTime:
-      enable: true
-      content: "min de lecture"
     scrollprogress:
       enable: true
     tags:
       openInNewTab: true
-
-  terms:
-    read: "Lire"
-    toc: "Sommaire"
-    copyright: "Tous droits réservés"
-    emailText: "Découvre ce site"
 
   datesFormat:
     article: "2 Jan 2006"
