@@ -174,23 +174,22 @@ params:
     bottomImage:
       enable: false
 
-  # 🎨 Palette de couleurs personnalisée (shared across languages)
+  # 🎨 Dark green theme
   color:
-    textColor: "#1F2937"
-    secondaryTextColor: "#4B5563"
-    textLinkColor: "#2EAD67"
-    backgroundColor: "#FAFCFA"
-    secondaryBackgroundColor: "#E8F5EC"
-    primaryColor: "#2EAD67"
-    secondaryColor: "#F4B942"
+    textColor: "#e8f5e9"
+    secondaryTextColor: "#a5d6a7"
+    backgroundColor: "#0d1a0d"
+    secondaryBackgroundColor: "#132213"
+    primaryColor: "#22c55e"
+    secondaryColor: "#16a34a"
+
     darkmode:
-      textColor: "#E4E6EB"
-      secondaryTextColor: "#B0B3B8"
-      textLinkColor: "#2EAD67"
-      backgroundColor: "#18191A"
-      secondaryBackgroundColor: "#1F2937"
-      primaryColor: "#2EAD67"
-      secondaryColor: "#F4B942"
+      textColor: "#e8f5e9"
+      secondaryTextColor: "#a5d6a7"
+      backgroundColor: "#0a120a"
+      secondaryBackgroundColor: "#0f1a0f"
+      primaryColor: "#4ade80"
+      secondaryColor: "#22c55e"
 
   font:
     fontSize: 1rem
