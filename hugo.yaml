@@ -16,12 +16,12 @@ languages:
         - identifier: projects
           name: Projets
           title: Mes projets
-          url: /blog/fr/projects
+          url: /fr/projects
           weight: 1
         - identifier: blog
           name: Articles
           title: Articles & tutos
-          url: /blog/fr/blogs
+          url: /fr/blogs
           weight: 2
     params:
       title: "Porus | Dev curieux"
@@ -88,12 +88,12 @@ languages:
         - identifier: projects
           name: Projects
           title: My projects
-          url: /blog/en/projects
+          url: /en/projects
           weight: 1
         - identifier: blog
           name: Articles
           title: Articles & tutorials
-          url: /blog/en/blogs
+          url: /en/blogs
           weight: 2
     params:
       title: "Porus | Curious dev"
