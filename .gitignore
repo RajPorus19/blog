@@ -1,5 +1,8 @@
-*.md
-GITHUB_TOKEN_FOR_BLOG=le_token_est_dans_env
+# Build output
 public/
-# Environment
-GITHUB_TOKEN_FOR_BLOG=*
+
+# Environment variables
+GITHUB_TOKEN_FOR_BLOG=***
+
+# Ignore private notes (from Obsidian vault) if they end up here
+*.private.md
