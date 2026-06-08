@@ -38,7 +38,7 @@
                 {{ end }}
                 {{ range $tags }}
                     <span class="badge tag-filter" data-tag="{{ . }}" onclick="toggleTag('{{ . }}')"
-                          style="cursor:pointer; background:#E8F5EC; color:#1F2937; padding:6px 12px; font-size:0.85rem; border:1px solid #2EAD67; border-radius:20px; transition:all 0.2s;">
+                          style="cursor:pointer; background:var(--secondary-background-color); color:var(--text-color); padding:6px 12px; font-size:0.85rem; border:1px solid var(--primary-color); border-radius:20px; transition:all 0.2s;">
                         {{ . }}
                     </span>
                 {{ end }}
@@ -59,7 +59,7 @@
                 <div class="card-body bg-transparent p-3">
                     <div class="pb-2 bg-transparent">
                         {{ range .Params.badges }}
-                        <span class="badge" style="background:#2EAD67; color:white;">{{ . }}</span>
+                        <span class="badge" style="background:var(--primary-color); color:white;">{{ . }}</span>
                         {{ end }}
                     </div>
                     <h5 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h5>
@@ -71,13 +71,13 @@
                 <div class="card-footer py-3 bg-transparent border-top-0">
                     {{ range .Params.links }}
                     <span class="m-1 mx-2">
-                        <a href="{{ .url }}" target="_blank" style="color:#2EAD67;">
+                        <a href="{{ .url }}" target="_blank" style="color:var(--primary-color);">
                             <i class="{{ .icon }}"></i>
                         </a>
                     </span>
                     {{ end }}
                     <span class="float-end">
-                        <a class="btn btn-sm" href="{{ .RelPermalink }}" style="background:#2EAD67; color:white; border-radius:20px;">
+                        <a class="btn btn-sm" href="{{ .RelPermalink }}" style="background:var(--primary-color); color:white; border-radius:20px;">
                             En savoir plus →
                         </a>
                     </span>
@@ -96,26 +96,26 @@
 
 <style>
 .tag-filter.active {
-    background: #2EAD67 !important;
+    background: var(--primary-color) !important;
     color: white !important;
 }
 .tag-filter:hover {
-    background: #2EAD67 !important;
+    background: var(--primary-color) !important;
     color: white !important;
     transform: scale(1.05);
 }
 #projectSearch {
-    border: 2px solid #E8F5EC;
+    border: 2px solid var(--secondary-background-color);
     border-radius: 20px;
     padding: 10px 16px;
     font-size: 0.95rem;
 }
 #projectSearch:focus {
-    border-color: #2EAD67;
-    box-shadow: 0 0 0 0.2rem rgba(46, 173, 103, 0.15);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.15);
 }
 #sortProjects {
-    border: 2px solid #E8F5EC;
+    border: 2px solid var(--secondary-background-color);
     border-radius: 20px;
     padding: 10px 16px;
 }
