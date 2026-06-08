@@ -16,12 +16,17 @@
     <!-- Search + Sort + Filter Bar -->
     <div class="row mb-4 align-items-center">
         <div class="col-md-4 mb-2 mb-md-0">
-            <input type="text" id="projectSearch" class="form-control" placeholder="🔍 Rechercher un projet..." onkeyup="filterProjects()">
+            <input type="text" id="projectSearch" class="form-control" placeholder="{{ if eq .Site.Language.Lang "en" }}🔍 Search projects...{{ else }}🔍 Rechercher un projet...{{ end }}" onkeyup="filterProjects()">
         </div>
         <div class="col-md-3 mb-2 mb-md-0">
             <select id="sortProjects" class="form-select" onchange="sortProjects()">
+                {{ if eq .Site.Language.Lang "en" }}
+                <option value="date-desc">📅 Newest</option>
+                <option value="date-asc">📅 Oldest</option>
+                {{ else }}
                 <option value="date-desc">📅 Plus récent</option>
                 <option value="date-asc">📅 Plus ancien</option>
+                {{ end }}
                 <option value="name-asc">📝 A-Z</option>
                 <option value="name-desc">📝 Z-A</option>
             </select>
@@ -78,7 +83,7 @@
                     {{ end }}
                     <span class="float-end">
                         <a class="btn btn-sm" href="{{ .RelPermalink }}" style="border:1px solid var(--primary-color); color:var(--primary-color); border-radius:20px;">
-                            En savoir plus →
+                            {{ if eq .Site.Language.Lang "en" }}Learn more →{{ else }}En savoir plus →{{ end }}
                         </a>
                     </span>
                 </div>
