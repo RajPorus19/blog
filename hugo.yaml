@@ -27,7 +27,7 @@ languages:
       title: "Porus | Dev curieux"
       description: "Dev full-stack qui construit, explore et apprend. Stack agnostique, curiosité infinie."
       navbar:
-        brandName: "🏠 Porus"
+        brandName: "Porus"
         searchPlaceholder: "Rechercher..."
       hero:
         enable: true
@@ -43,12 +43,6 @@ languages:
           url: "/blog/projects"
           download: false
           newPage: false
-        socialLinks:
-          fontAwesomeIcons:
-            - icon: fab fa-github
-              url: https://github.com/RajPorus19
-            - icon: fab fa-linkedin
-              url: https://linkedin.com/in/rajporus
       projects:
         enable: true
         title: "🚀 Projets récents"
@@ -110,7 +104,7 @@ languages:
       title: "Porus | Curious dev"
       description: "Full-stack dev who builds, explores and learns. Stack agnostic, infinite curiosity."
       navbar:
-        brandName: "🏠 Porus"
+        brandName: "Porus"
         searchPlaceholder: "Search..."
       hero:
         enable: true
@@ -126,12 +120,6 @@ languages:
           url: "/blog/en/projects"
           download: false
           newPage: false
-        socialLinks:
-          fontAwesomeIcons:
-            - icon: fab fa-github
-              url: https://github.com/RajPorus19
-            - icon: fab fa-linkedin
-              url: https://linkedin.com/in/rajporus
       projects:
         enable: true
         title: "🚀 Recent projects"
