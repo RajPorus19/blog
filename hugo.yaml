@@ -52,7 +52,21 @@ languages:
       projects:
         enable: true
         title: "🚀 Projets récents"
-        items: []
+        items:
+          - title: "Discord Forbidden API"
+            image: "/blog/images/project-placeholder.svg"
+            badges:
+              - "Python"
+              - "Flask"
+              - "API"
+              - "DevOps"
+            content: "Toolchain de synchronisation automatisée de messages Discord avec API REST, watchdog et stockage local."
+            links:
+              - icon: fab fa-github
+                url: https://github.com/RajPorus19
+            featured:
+              name: "Lire la suite"
+              link: "/blog/projects/projet-6"
       contact:
         enable: true
         content: |-
@@ -121,7 +135,21 @@ languages:
       projects:
         enable: true
         title: "🚀 Recent projects"
-        items: []
+        items:
+          - title: "Discord Forbidden API"
+            image: "/blog/images/project-placeholder.svg"
+            badges:
+              - "Python"
+              - "Flask"
+              - "API"
+              - "DevOps"
+            content: "Automated Discord message syncing toolchain with REST API, live watchdog, and local storage."
+            links:
+              - icon: fab fa-github
+                url: https://github.com/RajPorus19
+            featured:
+              name: "Read more"
+              link: "/blog/en/projects/project-6"
       contact:
         enable: true
         content: |-
