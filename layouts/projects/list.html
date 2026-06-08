@@ -67,7 +67,7 @@
                         <span class="badge" style="background:var(--primary-color); color:white;">{{ . }}</span>
                         {{ end }}
                     </div>
-                    <h5 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h5>
+                    <h5 class="card-title bg-transparent" style="font-size:1.05rem; font-weight:600;">{{ .Title | truncate 50 }}</h5>
                     <div class="card-text bg-transparent secondary-font" style="font-size:0.9rem;">
                         {{ .Summary | truncate 120 | safeHTML }}
                     </div>
