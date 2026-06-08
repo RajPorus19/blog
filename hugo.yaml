@@ -31,7 +31,7 @@ languages:
         searchPlaceholder: "Rechercher..."
       hero:
         enable: true
-        image: "/blog/images/avatar.svg"
+        image: "/blog/images/avatar.webp"
         roundImage: true
         intro: "Salut, je suis"
         title: "Porus 👋"
@@ -114,7 +114,7 @@ languages:
         searchPlaceholder: "Search..."
       hero:
         enable: true
-        image: "/blog/images/avatar.svg"
+        image: "/blog/images/avatar.webp"
         roundImage: true
         intro: "Hi, I'm"
         title: "Porus 👋"
