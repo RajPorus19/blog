@@ -1,4 +1,4 @@
-baseURL: "https://rajporus19.github.io/blog"
+baseURL: "https://porus.dev"
 languageCode: "fr-FR"
 title: "Porus | Dev curieux"
 theme: hugo-profile
@@ -31,7 +31,7 @@ languages:
         searchPlaceholder: "Rechercher..."
       hero:
         enable: true
-        image: "/blog/images/avatar.webp"
+        image: "/images/avatar.webp"
         roundImage: true
         intro: "Salut, je suis"
         title: "Porus 👋"
@@ -40,13 +40,13 @@ languages:
         button:
           enable: true
           name: "Voir mes projets"
-          url: "/blog/projects"
+          url: "/projects"
           download: false
           newPage: false
         button2:
           enable: true
           name: "Lire mes articles"
-          url: "/blog/blogs"
+          url: "/blogs"
           download: false
           newPage: false
       projects:
@@ -100,7 +100,7 @@ languages:
         searchPlaceholder: "Search..."
       hero:
         enable: true
-        image: "/blog/images/avatar.webp"
+        image: "/images/avatar.webp"
         roundImage: true
         intro: "Hi, I'm"
         title: "Porus 👋"
@@ -109,13 +109,13 @@ languages:
         button:
           enable: true
           name: "See my projects"
-          url: "/blog/en/projects"
+          url: "/en/projects"
           download: false
           newPage: false
         button2:
           enable: true
           name: "Read my articles"
-          url: "/blog/en/blogs"
+          url: "/en/blogs"
           download: false
           newPage: false
       projects:
@@ -165,7 +165,7 @@ markup:
       unsafe: true
 
 params:
-  favicon: "/blog/favicon.svg"
+  favicon: "/favicon.svg"
   useBootstrapCDN: false
   mathjax: false
   animate: true

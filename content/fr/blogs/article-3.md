@@ -2,7 +2,7 @@
 title: "Mieux vaut un flat earther qui raisonne qu'un savant qui radote"
 description: "Réflexion sur le savoir : pourquoi la capacité à expliquer vaut plus que la certitude silencieuse."
 date: 2026-06-08
-image: "/blog/images/flat-earth-banner.svg"
+image: "/images/flat-earth-banner.svg"
 tags:
   - "réflexion"
   - "épistémologie"

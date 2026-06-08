@@ -2,7 +2,7 @@
 title: "Discord Forbidden API"
 description: "Automated Discord message synchronization toolchain with REST API, live watchdog, and local storage"
 date: 2026-06-07
-image: "/blog/images/discord-banner.svg"
+image: "/images/discord-banner.svg"
 badges:
   - "Python"
   - "Flask"

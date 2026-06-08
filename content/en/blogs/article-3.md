@@ -2,7 +2,7 @@
 title: "Better a flat earther who reasons than an expert who can't explain"
 description: "A reflection on knowledge: why the ability to explain something matters more than silent certainty."
 date: 2026-06-08
-image: "/blog/images/flat-earth-banner.svg"
+image: "/images/flat-earth-banner.svg"
 tags:
   - "reflection"
   - "epistemology"
