@@ -202,22 +202,24 @@ params:
     bottomImage:
       enable: false
 
-  # 🎨 Green theme — fixed contrast
+  # 🎨 Indigo theme — high contrast, dev portfolio
   color:
-    textColor: "#1a2e1a"
-    secondaryTextColor: "#ffffff"
-    backgroundColor: "#f0fdf4"
-    secondaryBackgroundColor: "#dcfce7"
-    primaryColor: "#16a34a"
-    secondaryColor: "#22c55e"
+    textColor: "#171717"
+    secondaryTextColor: "#6b7280"
+    textLinkColor: "#4f46e5"
+    backgroundColor: "#fafafa"
+    secondaryBackgroundColor: "#f3f4f6"
+    primaryColor: "#4f46e5"
+    secondaryColor: "#eef2ff"
 
     darkmode:
-      textColor: "#e8f5e9"
-      secondaryTextColor: "#bbf7d0"
-      backgroundColor: "#1a2e1a"
-      secondaryBackgroundColor: "#162716"
-      primaryColor: "#4ade80"
-      secondaryColor: "#166534"
+      textColor: "#f3f4f6"
+      secondaryTextColor: "#9ca3af"
+      textLinkColor: "#818cf8"
+      backgroundColor: "#0f1117"
+      secondaryBackgroundColor: "#1a1d24"
+      primaryColor: "#818cf8"
+      secondaryColor: "#1e1b4b"
 
   font:
     fontSize: 1rem
