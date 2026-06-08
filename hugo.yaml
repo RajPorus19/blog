@@ -43,6 +43,12 @@ languages:
           url: "/blog/projects"
           download: false
           newPage: false
+        button2:
+          enable: true
+          name: "Lire mes articles"
+          url: "/blogs"
+          download: false
+          newPage: false
       projects:
         enable: true
         title: "🚀 Projets récents"
@@ -118,6 +124,12 @@ languages:
           enable: true
           name: "See my projects"
           url: "/blog/en/projects"
+          download: false
+          newPage: false
+        button2:
+          enable: true
+          name: "Read my articles"
+          url: "/en/blogs"
           download: false
           newPage: false
       projects:
