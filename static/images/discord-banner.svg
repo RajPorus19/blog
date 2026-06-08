@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5865F2"/>
+      <stop offset="100%" stop-color="#404EED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Discord logo icon (stylized) -->
+  <g transform="translate(100, 100)">
+    <!-- Discord "chat bubble" shape -->
+    <ellipse cx="250" cy="200" rx="180" ry="140" fill="none" stroke="white" stroke-width="12"/>
+    <!-- Discord controller/headset shape simplified -->
+    <path d="M120 200 Q120 120 250 100 Q380 120 380 200" fill="none" stroke="white" stroke-width="10"/>
+    <circle cx="200" cy="200" r="25" fill="white"/>
+    <circle cx="300" cy="200" r="25" fill="white"/>
+    <line x1="220" y1="230" x2="280" y2="230" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="580" y="340" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="white">Discord Forbidden API</text>
+  <text x="580" y="400" font-family="monospace" font-size="24" fill="rgba(255,255,255,0.8)">Message sync • REST API • Watchdog • Docker</text>
+  <text x="580" y="450" font-family="monospace" font-size="20" fill="rgba(255,255,255,0.6)">Python • Flask • JSONL • Cron</text>
+</svg>
