@@ -2,7 +2,7 @@
 title: "Kattruko — Devlog 1: Idea and Product Design"
 description: "Why I built a study companion connected to my Obsidian vault, and the design choices that shaped it."
 date: 2026-06-09
-image: "/blog/images/kattruko-devlog-1.svg"
+image: "/images/kattruko-devlog-1.svg"
 tags:
   - "devlog"
   - "kattruko"
