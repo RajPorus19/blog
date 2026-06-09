@@ -21,6 +21,10 @@ Les apps de flashcards existent — Anki, Quizlet, etc. Mais elles ont un défau
 
 L'idée de Kattruko est née de là : **et si l'app qui te fait réviser était directement branchée sur ton vault ?**
 
+### L'origine du nom
+
+Kattruko (கற்றுக்கொ) signifie « apprends » en tamoul — une langue dravidienne du sud de l'Inde et du Sri Lanka. C'est une contraction de *katrukol* (apprendre, étudier). Le nom est venu naturellement : l'app existe pour ça, apprendre. Pas pour gérer des tâches, pas pour faire des statistiques — apprendre. Le mot est court, il sonne bien, et il dit exactement ce que le projet fait.
+
 ---
 
 ## Pourquoi pas une solution existante ?

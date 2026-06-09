@@ -21,6 +21,10 @@ Flashcard apps exist — Anki, Quizlet, etc. But they all share a fundamental fl
 
 The idea behind Kattruko was simple: **what if the app that quizzes you was directly plugged into your vault?**
 
+### The origin of the name
+
+Kattruko (கற்றுக்கொ) means "learn" in Tamil — a Dravidian language from southern India and Sri Lanka. It's a contraction of *katrukol* (to learn, to study). The name came naturally: the app exists to learn. Not to manage tasks, not to generate statistics — to learn. The word is short, it sounds good, and it says exactly what the project does.
+
 ---
 
 ## Why not an existing solution?
