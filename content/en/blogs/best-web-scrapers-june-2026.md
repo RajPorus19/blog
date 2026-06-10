@@ -159,7 +159,7 @@ Its **CDP mode** is interesting: it communicates directly with Chrome via the De
 ### Newcomers worth watching
 
 - <img src="/images/pinchtab-logo.png" alt="Pinchtab" style="height:30px; vertical-align:middle; border-radius:4px;"> **[Pinchtab](https://github.com/pinchtab/pinchtab)** (9,100⭐): multi-instance browser orchestration with real-time stealth injection. More automation-focused than pure scraping, but the anti-detection layer is promising.
-- <img src="/images/browserless-logo.png" alt="Browserless" style="height:30px; vertical-align:middle; border-radius:4px;"> **[Browserless](https://github.com/microlinkhq/browserless)** (1,800⭐): headless Chrome as a service. Useful if you want to offload the browser part to an external service rather than managing Chrome instances yourself.
+- <img src="/images/browserless-logo.svg" alt="Browserless" style="height:30px; vertical-align:middle; border-radius:4px;"> **[Browserless](https://github.com/microlinkhq/browserless)** (1,800⭐): headless Chrome as a service. Useful if you want to offload the browser part to an external service rather than managing Chrome instances yourself.
 - <img src="/images/webclaw-logo.png" alt="Webclaw" style="height:30px; vertical-align:middle; border-radius:4px;"> **[Webclaw](https://github.com/0xMassi/webclaw)** (1,300⭐): Rust-based web content extraction, LLM-oriented. Fast, local-first, still young but promising for structured extraction.
 - <img src="/images/runo-logo.png" alt="Runo" style="height:30px; vertical-align:middle; border-radius:4px;"> **[Runo](https://github.com/44za12/surf)** (new, May 2026): a scraping API that returns typed JSON instead of raw HTML. The positioning is interesting: "you want data, not markup."
 
