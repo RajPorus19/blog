@@ -2,6 +2,7 @@
 title: "Kattruko — Devlog 1: Idea and Product Design"
 description: "Why I built a study companion connected to my Obsidian vault, and the design choices that shaped it."
 date: 2026-06-09
+translationKey: "devlog-1-kattruko"
 image: "/images/kattruko-devlog-1.svg"
 tags:
   - "devlog"
@@ -17,7 +18,7 @@ I've been growing an Obsidian vault for years. Hundreds of notes on biology, chr
 
 A note on leptin and ghrelin regulation? Fascinating the day you write it. Two months later, you remember it exists, but you couldn't explain how the two hormones interact. In real life, what you don't use, you lose.
 
-Flashcard apps exist — Anki, Quizlet, etc. But they all share a fundamental flaw: **you have to recreate everything.** Copy your notes into another format, another tool, another database. That's insurmountable friction over time. And once you have 500 notes, it's too late.
+Flashcard apps exist — [Anki](https://apps.ankiweb.net/), Quizlet, etc. But they all share a fundamental flaw: **you have to recreate everything.** Copy your notes into another format, another tool, another database. That's insurmountable friction over time. And once you have 500 notes, it's too late.
 
 The idea behind Kattruko was simple: **what if the app that quizzes you was directly plugged into your vault?**
 
@@ -32,8 +33,8 @@ Kattruko (கற்றுக்கொ) means "learn" in Tamil — a Dravidian la
 I spent a fair amount of time looking at what's out there. Anki is the gold standard, but:
 
 - **Obsidian to Anki** — plugins exist, but they're fragile, depend on AnkiConnect, and break with every update on either side
-- **RemNote** — all-in-one but closed-source, no local vault, no control over your data
-- **Notion** — no native spaced repetition, no auto-generated quizzes
+- **[RemNote](https://www.remnote.com/)** — all-in-one but closed, no local vault, no data control
+- **[Notion](https://www.notion.so/)** — no native spaced repetition, no auto-generated quizzes
 
 The real need is an app that **reads your notes directly**, understands them, and transforms them into study material without any manual work. No off-the-shelf solution does that well.
 
@@ -76,7 +77,7 @@ The most important technical choice after the concept itself.
 **Flutter for the frontend:**
 - Cross-platform without sacrificing quality
 - Hot reload for fast design iteration
-- Native Material 3 — the design spec I wanted is literally in the framework
+- [Material 3](https://m3.material.io/) native — the design spec I wanted is literally in the framework
 
 **Django DRF for the backend:**
 - Python, the ecosystem I know best
@@ -109,6 +110,6 @@ This system was rewritten twice. V1 was too optimistic and broke on complex note
 
 ## What's next
 
-Devlog 2 will cover the **design system and visual identity** — palette choices, typography, and how it all fits together in a complete spec.
+The [Devlog 2](/en/blogs/devlog-2-matcha-latte/) talks about the **design system and visual identity** — the palette choices, the typography, and how it all fits into a complete charter.
 
 For now, Kattruko is in closed development. No public repo, no open beta — it's a personal tool built to solve *my* problem. If it helps others someday, great, but that's not the goal today.

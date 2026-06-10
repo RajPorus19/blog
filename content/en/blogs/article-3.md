@@ -2,6 +2,7 @@
 title: "Better a flat earther who reasons than an expert who can't explain"
 description: "A reflection on knowledge: why the ability to explain something matters more than silent certainty."
 date: 2026-06-08
+translationKey: "flat-earther"
 image: "/images/flat-earth-banner.svg"
 tags:
   - "reflection"
@@ -62,7 +63,7 @@ The real value of knowledge isn't possessing it. It's the ability to **transmit*
 
 That's why the best teachers, the best science communicators, the best engineers aren't the ones who know the most. They're the ones who can **retrace the path** so you can walk it too.
 
-Richard Feynman, Nobel Prize-winning physicist, had this rule: if you can't explain a concept to a 12-year-old, you don't really understand it. Not oversimplifying to the point of lying — but translating complexity into accessibility.
+[Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman), Nobel Prize-winning physicist, had this rule: if you can't explain a concept to a 12-year-old, you don't really understand it. Not oversimplifying to the point of lying — but translating complexity into accessibility.
 
 The flat earther, ironically, follows this rule better than many experts. Their problem isn't the absence of reasoning — it's the absence of curiosity to check their premises.
 
@@ -88,8 +89,10 @@ Knowledge isn't a destination. It's a muscle.
 
 A muscle that atrophies if you settle for repeating what you've heard, and strengthens every time you try to explain something to someone — especially when you fail and have to start over.
 
-So yes, the Earth is round. But the next time someone asks you *why*, don't answer "because it just is." Grab a piece of paper, a pen, and retrace the path. Show Eratosthenes measuring shadows in Alexandria and Syene in 240 BCE. Show ships disappearing hull-first over the horizon. Show the Earth's shadow on the Moon during an eclipse.
+So yes, the Earth is round. But the next time someone asks you *why*, don't answer "because it just is." Grab a piece of paper, a pen, and retrace the path. Show [Eratosthenes](https://en.wikipedia.org/wiki/Eratosthenes) measuring shadows in Alexandria and Syene in 240 BCE. Show ships disappearing hull-first over the horizon. Show the Earth's shadow on the Moon during an eclipse.
 
 Or, humbly accept that you can't explain it — and that this might be the beginning of genuine curiosity.
 
-Because in the end, it's better to be a flat earther trying to reason than an expert who forgot how.
+Because at the end of the day, it's better to be a flat earther trying to reason than an expert who's forgotten how.
+
+*→ This article is part of a reflection on learning. In the same vein: [Devlog 1 — Kattruko's idea and design](/en/blogs/devlog-1-kattruko-idea-and-design/), a study companion built on this philosophy.*

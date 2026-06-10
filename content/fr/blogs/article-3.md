@@ -2,6 +2,7 @@
 title: "Mieux vaut un flat earther qui raisonne qu'un savant qui radote"
 description: "Réflexion sur le savoir : pourquoi la capacité à expliquer vaut plus que la certitude silencieuse."
 date: 2026-06-08
+translationKey: "flat-earther"
 image: "/images/flat-earth-banner.svg"
 tags:
   - "réflexion"
@@ -62,7 +63,7 @@ La vraie valeur du savoir, ce n'est pas de le posséder. C'est de pouvoir le **t
 
 C'est pour ça que les meilleurs profs, les meilleurs vulgarisateurs, les meilleurs ingénieurs ne sont pas ceux qui savent le plus de choses. Ce sont ceux qui savent **refaire le chemin** pour que toi aussi tu puisses le parcourir.
 
-Richard Feynman, prix Nobel de physique, avait cette règle : si tu ne peux pas expliquer un concept à un enfant de 12 ans, c'est que tu ne le comprends pas vraiment. Pas besoin de simplifier au point de mentir — mais besoin de traduire le complexe en accessible.
+[Richard Feynman](https://fr.wikipedia.org/wiki/Richard_Feynman), prix Nobel de physique, avait cette règle : si tu ne peux pas expliquer un concept à un enfant de 12 ans, c'est que tu ne le comprends pas vraiment. Pas besoin de simplifier au point de mentir — mais besoin de traduire le complexe en accessible.
 
 Le flat earther, ironiquement, applique cette règle mieux que beaucoup d'experts. Son problème n'est pas l'absence de raisonnement — c'est l'absence de curiosité pour vérifier ses prémisses.
 
@@ -88,8 +89,10 @@ Le savoir n'est pas une destination. C'est un muscle.
 
 Un muscle qui s'atrophie si tu te contentes de répéter ce que tu as entendu, et qui se renforce chaque fois que tu essaies d'expliquer quelque chose à quelqu'un — surtout quand tu échoues et que tu dois recommencer.
 
-Alors oui, la Terre est ronde. Mais la prochaine fois que quelqu'un te demande *pourquoi*, ne réponds pas « parce que c'est comme ça. » Prends une feuille, un stylo, et refais le chemin. Montre Ératosthène qui mesure des ombres à Alexandrie et à Syène en 240 avant J.-C. Montre les bateaux qui disparaissent coque d'abord à l'horizon. Montre l'ombre de la Terre sur la Lune pendant une éclipse.
+Alors oui, la Terre est ronde. Mais la prochaine fois que quelqu'un te demande *pourquoi*, ne réponds pas « parce que c'est comme ça. » Prends une feuille, un stylo, et refais le chemin. Montre [Ératosthène](https://fr.wikipedia.org/wiki/%C3%89ratosth%C3%A8ne) qui mesure des ombres à Alexandrie et à Syène en 240 avant J.-C. Montre les bateaux qui disparaissent coque d'abord à l'horizon. Montre l'ombre de la Terre sur la Lune pendant une éclipse.
 
 Ou alors, accepte humblement que tu ne sais pas l'expliquer — et que c'est peut-être le début d'une vraie curiosité.
 
 Parce qu'au fond, il vaut mieux être un flat earther qui essaie de raisonner qu'un expert qui a oublié comment.
+
+*→ Cet article fait partie d'une réflexion sur l'apprentissage. Dans la même veine : [Devlog 1 — Idée et conception de Kattruko](/blogs/devlog-1-kattruko-idee-conception/), un study companion construit sur cette philosophie.*

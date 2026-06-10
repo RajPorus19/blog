@@ -1,0 +1,76 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Site.Params.author | default .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "sameAs": [
+    {{ if .Site.Params.socialNetworks.github }}"https://github.com/{{ .Site.Params.socialNetworks.github | replaceRE "https://github.com/" "" }}"{{ end }}
+    {{ if .Site.Params.socialNetworks.linkedin }},"{{ .Site.Params.socialNetworks.linkedin }}"{{ end }}
+    {{ if .Site.Params.socialNetworks.twitter }},"{{ .Site.Params.socialNetworks.twitter }}"{{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{ if or (eq .Section "blogs") (eq .Section "projects") }}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Params.description }}",
+  {{ if .Params.image }}
+  "image": "{{ .Params.image | absURL }}",
+  {{ end }}
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "url": "{{ .Permalink }}",
+  "inLanguage": "{{ .Language.Lang }}",
+  {{ if .Params.tags }}
+  "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}],
+  {{ end }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author | default .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  }
+}
+</script>
+{{ end }}
+
+{{ if not .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ .Site.Title }}",
+      "item": "{{ .Site.BaseURL }}"
+    },
+    {{ if .Section }}
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Section | humanize }}",
+      "item": "{{ .Site.BaseURL }}{{ .Section }}/"
+    }
+    {{ if .IsPage }},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{ end }}
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+{{ end }}

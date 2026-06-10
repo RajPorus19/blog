@@ -2,6 +2,7 @@
 title: "Kattruko — Devlog 2 : Design system et identité visuelle (Matcha Latte)"
 description: "Pourquoi documenter une palette de couleurs et une charte typographique pour une app perso, et comment garder une cohérence visuelle clair/sombre."
 date: 2026-06-10
+translationKey: "devlog-2-kattruko"
 image: "/images/kattruko-devlog-2.svg"
 tags:
   - "devlog"
@@ -14,6 +15,8 @@ mathjax: false
 ---
 
 ## Pourquoi un design system pour une app perso ?
+
+> Dans le [Devlog 1](/blogs/devlog-1-kattruko-idee-conception/), j'ai raconté la genèse de Kattruko — un study companion connecté à Obsidian. Ici, on plonge dans l'identité visuelle : le design system Matcha Latte.
 
 Pourquoi perdre du temps à documenter des couleurs, des espacements, des règles typographiques ? Est-ce que je ne ferais pas mieux de coder directement ?
 
@@ -35,7 +38,7 @@ Le nom de la palette est arrivé tôt et ne m'a jamais quitté. Matcha comme le 
 
 Le vert principal (#6B9F72) évoque la feuille, le naturel, la croissance. C'est une couleur qui ne surprend pas, qui repose. En face, le peach (#F0B27A) apporte de la chaleur sans agresser. Les neutres (crème, gris doux, blanc cassé) font le lien.
 
-Pour la typographie, j'ai choisi Inter. C'est une police qui a été pensée pour les écrans : les courbes sont légèrement ouvertes, la hauteur d'x est généreuse. Elle donne un rendu technique sans être froide. Figma et GitHub l'utilisent, et je trouve qu'elle capte bien ce que je veux pour Kattruko : un outil sérieux, pas une app de jeu.
+Pour la typographie, j'ai choisi [Inter](https://rsms.me/inter/). C'est une police qui a été pensée pour les écrans : les courbes sont légèrement ouvertes, la hauteur d'x est généreuse. Elle donne un rendu technique sans être froide. [Figma](https://www.figma.com/) et GitHub l'utilisent, et je trouve qu'elle capte bien ce que je veux pour Kattruko : un outil sérieux, pas une app de jeu.
 
 Le vrai travail a été de créer deux thèmes, clair et sombre, qui partagent la même identité. Pas un simple invert des couleurs. Le mode clair est frais, aérien, inspiré du papier. Le mode sombre est profond, tamisé, comme un écran de lecture le soir. Les deux utilisent les mêmes couleurs de base, mais les proportions changent : le vert devient plus présent en sombre, le peach plus subtil.
 
@@ -57,4 +60,6 @@ Et ça crée de la cohérence sans effort. Pas de vert qui vire au bleu parce qu
 
 Le prochain devlog parlera de l'import des notes Obsidian — le scanner multi-passes, les wikilinks, et comment extraire du sens de fichiers markdown sans tout casser.
 
-Entre-temps, Kattruko continue en développement fermé. Le design system Matcha Latte est stable, documenté, et appliqué. Il me sert de fondation pour la suite.
+En attendant, Kattruko continue en développement fermé. Le design system Matcha Latte est stable, documenté, et appliqué. Il me sert de fondation pour la suite.
+
+*→ Intéressé par la philosophie d'apprentissage ? Jette un œil à la réflexion « [Mieux vaut un flat earther qui raisonne qu'un savant qui radote](/blogs/article-3/) ». Et si t'as loupé le début, le [Devlog 1](/blogs/devlog-1-kattruko-idee-conception/) raconte la genèse du projet.*

@@ -2,6 +2,7 @@
 title: "Kattruko — Devlog 1 : Idée et conception du produit"
 description: "Pourquoi j'ai construit un study companion connecté à mon Obsidian vault, et les choix qui ont guidé sa conception."
 date: 2026-06-09
+translationKey: "devlog-1-kattruko"
 image: "/images/kattruko-devlog-1.svg"
 tags:
   - "devlog"
@@ -17,7 +18,7 @@ J'ai un Obsidian vault qui grossit depuis des années. Des centaines de notes su
 
 Une note sur la régulation de la leptine et de la ghréline ? Très intéressant le jour où tu l'écris. Deux mois plus tard, tu te souviens que ça existe, mais tu serais incapable de dire comment les deux hormones interagissent. Dans la vraie vie, ce que tu n'utilises pas, tu le perds.
 
-Les apps de flashcards existent — Anki, Quizlet, etc. Mais elles ont un défaut fondamental : **tu dois tout recréer.** Copier le contenu de tes notes vers un autre format, un autre outil, une autre base. C'est une friction insurmontable sur le long terme. Et quand t'as 500 notes, c'est trop tard.
+Les apps de flashcards existent — [Anki](https://apps.ankiweb.net/), Quizlet, etc. Mais elles ont un défaut fondamental : **tu dois tout recréer.** Copier le contenu de tes notes vers un autre format, un autre outil, une autre base. C'est une friction insurmontable sur le long terme. Et quand t'as 500 notes, c'est trop tard.
 
 L'idée de Kattruko est née de là : **et si l'app qui te fait réviser était directement branchée sur ton vault ?**
 
@@ -32,8 +33,8 @@ Kattruko (கற்றுக்கொ) signifie « apprends » en tamoul — une
 J'ai passé pas mal de temps à regarder ce qui existe. Anki est le standard, mais :
 
 - **Obsidian to Anki** — des plugins existent, mais ils sont fragiles, dépendent de AnkiConnect, et cassent à chaque mise à jour d'un côté ou de l'autre
-- **RemNote** — tout-en-un mais fermé, pas de vault local, pas de contrôle sur tes données
-- **Notion** — pas de spaced repetition natif, pas de quiz généré automatiquement
+- **[RemNote](https://www.remnote.com/)** — tout-en-un mais fermé, pas de vault local, pas de contrôle sur tes données
+- **[Notion](https://www.notion.so/)** — pas de spaced repetition natif, pas de quiz généré automatiquement
 
 Le vrai besoin, c'est une app qui **lit directement tes notes**, les comprend, et les transforme en matériel d'étude sans que tu aies à faire de travail manuel. Et ça, aucune solution clé en main ne le fait bien.
 
@@ -76,7 +77,7 @@ Le choix technique le plus important après le concept lui-même.
 **Flutter pour le frontend :**
 - Cross-platform sans sacrifier la qualité
 - Hot reload pour itérer vite sur le design
-- Material 3 natif — la spec de design voulue est littéralement dans le framework
+- [Material 3](https://m3.material.io/) natif — la spec de design voulue est littéralement dans le framework
 
 **Django DRF pour le backend :**
 - Python, l'écosystème que je maîtrise le mieux
@@ -109,6 +110,6 @@ Ce système a été réécrit deux fois. La V1 était trop optimiste et cassait 
 
 ## La suite
 
-Le Devlog 2 parlera du **design system et de l'identité visuelle** — les choix de palette, la typographie, et comment tout ça s'intègre dans une charte complète.
+Le [Devlog 2](/blogs/devlog-2-matcha-latte/) parle du **design system et de l'identité visuelle** — les choix de palette, la typographie, et comment tout ça s'intègre dans une charte complète.
 
 Entre-temps, Kattruko reste en développement fermé. Pas de repo public, pas de beta ouverte — c'est un outil perso, construit pour résoudre *mon* problème. Si ça peut aider d'autres personnes un jour, tant mieux, mais ce n'est pas l'objectif aujourd'hui.

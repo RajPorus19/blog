@@ -9,7 +9,7 @@
 
 {{ define "main" }}
 <div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">{{.Title}}</h2>
+    <h1 class="text-center pb-2">{{.Title}}</h1>
     <div class="row">
         {{ range .Paginator.Pages }}
         <div class="col-lg-4 col-md-6 my-3">
@@ -23,7 +23,7 @@
                 {{ end }}
                 <div class="card-body bg-transparent p-4 shadow-sm">
                     <a href="{{ .RelPermalink }}" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="{{ .Title }}" style="font-size:1.05rem; font-weight:600;">{{ .Title }}</h5>
+                        <h3 class="card-title bg-transparent" title="{{ .Title }}" style="font-size:1.05rem; font-weight:600;">{{ .Title }}</h3>
                     </a>
                     <div class="card-text secondary-font">
                         <p>{{ .Summary | truncate 300}}</p>

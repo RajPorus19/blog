@@ -1,7 +1,8 @@
 ---
 title: "Kattruko — Devlog 2: Design System and Visual Identity (Matcha Latte)"
-description: "Why document a color palette and typographic charter for a personal app, and how to maintain visual coherence across light and dark themes."
+description: "Why document a color palette and typographic charter for a personal app, and how to maintain light/dark visual consistency."
 date: 2026-06-10
+translationKey: "devlog-2-kattruko"
 image: "/images/kattruko-devlog-2.svg"
 tags:
   - "devlog"
@@ -14,6 +15,8 @@ mathjax: false
 ---
 
 ## Why a design system for a personal app?
+
+> In [Devlog 1](/en/blogs/devlog-1-kattruko-idea-and-design/), I covered Kattruko's genesis — a study companion plugged into Obsidian. Here, we dive into the visual identity: the Matcha Latte design system.
 
 I asked myself this question early on. Kattruko is a closed project, used by one person (me). Why spend time documenting colors, spacing, and typography rules? Wouldn't it be faster to just code directly?
 
@@ -35,7 +38,7 @@ The palette name came early and never left. Matcha for the green tea, latte for 
 
 The main green (#6B9F72) evokes leaves, nature, growth. It's a color that doesn't surprise you, that rests. On the other side, the peach (#F0B27A) brings warmth without aggression. Neutrals (cream, soft gray, off-white) tie it all together.
 
-For typography, I chose Inter. It's a font designed for screens -- slightly open curves, generous x-height. It reads as technical without being cold. Figma and GitHub use it, and I think it captures what I want for Kattruko: a serious tool, not a game app.
+For typography, I chose [Inter](https://rsms.me/inter/). It's a font designed for screens -- slightly open curves, generous x-height. It reads as technical without being cold. [Figma](https://www.figma.com/) and GitHub use it, and I think it captures what I want for Kattruko: a serious tool, not a game app.
 
 The real work was creating two themes -- light and dark -- that share the same identity. Not a simple color invert. Light mode is fresh and airy, inspired by paper. Dark mode is deep and dim, like a reading screen at night. Both use the same base colors, but the proportions shift: green becomes more present in dark mode, peach more subtle.
 
@@ -58,3 +61,5 @@ And that creates consistency without effort. No green that drifts toward blue be
 The next devlog will cover Obsidian note import -- the multi-pass scanner, wikilinks, and how to extract meaning from markdown files without breaking everything.
 
 In the meantime, Kattruko continues in closed development. The Matcha Latte design system is stable, documented, and applied. It's the foundation for everything that follows.
+
+*→ Interested in learning philosophy? Check out "[Better a flat earther who reasons than an expert who can't explain](/en/blogs/article-3/)". And if you missed the start, [Devlog 1](/en/blogs/devlog-1-kattruko-idea-and-design/) covers the project's genesis.*
