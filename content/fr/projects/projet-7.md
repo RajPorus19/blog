@@ -101,3 +101,7 @@ Le moteur de jeu est du Python pur, sans aucune dépendance Django — testable 
 - **Redis est indispensable pour les WebSockets en production.** Sans channel layer Redis, Daphne ne peut pas broadcaster entre workers. Et sans Upstash comme fallback serverless, le déploiement sur Render devenait impossible.
 
 - **Le refresh recovery est un must.** Dans un jeu de société en ligne, les joueurs vont forcément changer d'onglet, perdre le WiFi, fermer leur navigateur. Si chaque déconnexion casse la partie, le jeu est injouable. Le système d'éviction de socket et de `reconnect_private_state` a résolu ça.
+
+---
+
+[Lire l'article sur le développement de Secret Hitler →](/blogs/devlog-secret-hitler/)

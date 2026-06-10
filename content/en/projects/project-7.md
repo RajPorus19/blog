@@ -101,3 +101,7 @@ The game engine is pure Python with zero Django dependencies — fully testable 
 - **Redis is non-negotiable for production WebSockets.** Without a Redis channel layer, Daphne can't broadcast between workers. And without Upstash as a serverless fallback, deploying on Render became impossible.
 
 - **Refresh recovery is a must.** In an online board game, players will inevitably switch tabs, lose WiFi, or close their browser. If every disconnect breaks the game, it's unplayable. The socket eviction and `reconnect_private_state` system solved this.
+
+---
+
+[Read the Secret Hitler development article →](/en/blogs/devlog-secret-hitler/)

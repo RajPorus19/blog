@@ -109,3 +109,7 @@ I also finalized the production Docker configuration: PostgreSQL, Redis, Daphne 
 The game is online and functional. Future devlogs will cover post-launch improvements: refactoring the consumer (2385 lines is too much), rate limiting, and maybe a ranked mode.
 
 Until then, you can play at [secret-hitler.porus.dev](https://secret-hitler.porus.dev) — create a room, invite friends, and see if you can pass your fascist laws without getting caught.
+
+---
+
+[View the project page →](/en/projects/project-7/)

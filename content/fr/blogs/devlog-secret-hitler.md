@@ -109,3 +109,7 @@ J'ai aussi finalisé la configuration Docker de production : PostgreSQL, Redis, 
 Le jeu est en ligne et fonctionnel. Les prochains devlogs parleront des améliorations post-lancement : refactor du consumer (2385 lignes, c'est trop), rate limiting, et peut-être un mode ranked.
 
 D'ici là, tu peux jouer sur [secret-hitler.porus.dev](https://secret-hitler.porus.dev) — crée une room, invite des amis, et vois si tu peux faire passer tes lois fascistes sans te faire démasquer.
+
+---
+
+[Voir la fiche projet →](/projects/projet-7/)
