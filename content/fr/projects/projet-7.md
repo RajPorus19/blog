@@ -16,8 +16,6 @@ tags:
   - "jeu"
   - "fullstack"
 links:
-  - icon: fab fa-github
-    url: https://github.com/RajPorus19/secret-hitler
   - icon: fas fa-globe
     url: https://secret-hitler.porus.dev
 showInHome: true
