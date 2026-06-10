@@ -49,7 +49,7 @@ En 2026, la majorité des sites modernes sont des SPAs qui rendent leur contenu 
 
 ### 4. Le scale et la fiabilité
 
-Scraper 10 pages, c'est un script. Scraper 10 **millions** de pages avec 99.9% de uptime, des retries intelligents, de la rotation d'IP et du尊重 des `robots.txt`, c'est un métier.
+Scraper 10 pages, c'est un script. Scraper 10 **millions** de pages avec 99.9% de uptime, des retries intelligents, de la rotation d'IP et du respect des `robots.txt`, c'est un métier.
 
 ---
 
