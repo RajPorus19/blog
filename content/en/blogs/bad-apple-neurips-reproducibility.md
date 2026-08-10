@@ -3,7 +3,7 @@ title: "Bad Apple in a 3MB neural network, and the NeurIPS reproducibility crisi
 description: "Someone compressed the entire Bad Apple music video into a 3.5M-parameter LLaMA. Meanwhile, ML researchers at NeurIPS 2026 are debating whether papers without code should be desk-rejected. These stories are the same story."
 date: 2026-08-10
 translationKey: "bad-apple-neurips-reproducibility"
-image: "/images/project-placeholder.svg"
+image: "/images/bad-apple-neurips.svg"
 tags:
   - "ai"
   - "machine-learning"

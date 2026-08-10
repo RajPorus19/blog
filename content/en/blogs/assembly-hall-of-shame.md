@@ -3,7 +3,7 @@ title: "The Assembly Hall of Shame — or why making CPUs slow is an art form"
 description: "A deep dive into the project that finds the slowest single x86 instructions. The current champion: fxrstor64 at 62 seconds. This is hardware poetry."
 date: 2026-08-10
 translationKey: "assembly-hall-of-shame"
-image: "/images/project-placeholder.svg"
+image: "/images/assembly-hall-of-shame.svg"
 tags:
   - "assembly"
   - "cpu"

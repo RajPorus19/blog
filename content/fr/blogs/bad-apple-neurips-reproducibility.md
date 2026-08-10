@@ -3,7 +3,7 @@ title: "Bad Apple dans un réseau de neurones de 3 Mo, et la crise de reproducti
 description: "Quelqu'un a compressé tout le clip Bad Apple dans un LLaMA de 3,5M de paramètres. Pendant ce temps, les chercheurs ML à NeurIPS 2026 débattent si les papiers sans code devraient être desk-rejetés. Ces deux histoires sont la même histoire."
 date: 2026-08-10
 translationKey: "bad-apple-neurips-reproducibility"
-image: "/images/project-placeholder.svg"
+image: "/images/bad-apple-neurips.svg"
 tags:
   - "ia"
   - "machine-learning"

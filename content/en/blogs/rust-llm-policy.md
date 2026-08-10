@@ -3,7 +3,7 @@ title: "Rust banned LLM-generated code — and it's the right call"
 description: "Why the Rust project's new LLM policy matters: code is the smallest part of open source. The real work is understanding, community, and trust."
 date: 2026-08-10
 translationKey: "rust-llm-policy"
-image: "/images/project-placeholder.svg"
+image: "/images/rust-llm-policy.svg"
 tags:
   - "rust"
   - "open-source"

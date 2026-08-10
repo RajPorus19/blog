@@ -3,7 +3,7 @@ title: "Le Assembly Hall of Shame — ou pourquoi rendre les CPUs lents est un a
 description: "Plongée dans le projet qui trouve les instructions x86 les plus lentes. Le champion actuel : fxrstor64 en 62 secondes. C'est de la poésie hardware."
 date: 2026-08-10
 translationKey: "assembly-hall-of-shame"
-image: "/images/project-placeholder.svg"
+image: "/images/assembly-hall-of-shame.svg"
 tags:
   - "assembleur"
   - "cpu"

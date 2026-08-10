@@ -3,7 +3,7 @@ title: "Rust a banni le code généré par LLM — et c'est la bonne décision"
 description: "Pourquoi la nouvelle politique LLM du projet Rust est importante : le code est la plus petite partie de l'open source. Le vrai travail, c'est la compréhension, la communauté et la confiance."
 date: 2026-08-10
 translationKey: "rust-llm-policy"
-image: "/images/project-placeholder.svg"
+image: "/images/rust-llm-policy.svg"
 tags:
   - "rust"
   - "open-source"

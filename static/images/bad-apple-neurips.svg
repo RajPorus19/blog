@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#52b788"/>
+      <stop offset="100%" stop-color="#95d5b2"/>
+    </linearGradient>
+    <linearGradient id="neural" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(82,183,136,0.3)"/>
+      <stop offset="100%" stop-color="rgba(149,213,178,0.1)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="250" fill="rgba(82,183,136,0.03)"/>
+  <circle cx="1150" cy="500" r="200" fill="rgba(82,183,136,0.02)"/>
+  <circle cx="600" cy="300" r="400" fill="rgba(82,183,136,0.02)"/>
+
+  <!-- Left: Neural network + apple illustration -->
+  <g transform="translate(50, 100)">
+    <!-- Neural network nodes -->
+    <g>
+      <!-- Layer 1 -->
+      <circle cx="30" cy="80" r="10" fill="url(#accent)" opacity="0.4"/>
+      <circle cx="30" cy="160" r="10" fill="url(#accent)" opacity="0.4"/>
+      <circle cx="30" cy="240" r="10" fill="url(#accent)" opacity="0.4"/>
+      <!-- Layer 2 -->
+      <circle cx="120" cy="60" r="12" fill="url(#accent)" opacity="0.55"/>
+      <circle cx="120" cy="120" r="12" fill="url(#accent)" opacity="0.55"/>
+      <circle cx="120" cy="180" r="12" fill="url(#accent)" opacity="0.55"/>
+      <circle cx="120" cy="240" r="12" fill="url(#accent)" opacity="0.55"/>
+      <circle cx="120" cy="300" r="12" fill="url(#accent)" opacity="0.55"/>
+      <!-- Layer 3 -->
+      <circle cx="210" cy="80" r="10" fill="url(#accent)" opacity="0.4"/>
+      <circle cx="210" cy="160" r="10" fill="url(#accent)" opacity="0.4"/>
+      <circle cx="210" cy="240" r="10" fill="url(#accent)" opacity="0.4"/>
+
+      <!-- Connections -->
+      <g stroke="url(#accent)" stroke-width="0.8" opacity="0.12">
+        <line x1="40" y1="80" x2="108" y2="60"/>
+        <line x1="40" y1="80" x2="108" y2="120"/>
+        <line x1="40" y1="80" x2="108" y2="180"/>
+        <line x1="40" y1="160" x2="108" y2="60"/>
+        <line x1="40" y1="160" x2="108" y2="120"/>
+        <line x1="40" y1="160" x2="108" y2="180"/>
+        <line x1="40" y1="160" x2="108" y2="240"/>
+        <line x1="40" y1="160" x2="108" y2="300"/>
+        <line x1="40" y1="240" x2="108" y2="180"/>
+        <line x1="40" y1="240" x2="108" y2="240"/>
+        <line x1="40" y1="240" x2="108" y2="300"/>
+        <line x1="132" y1="60" x2="200" y2="80"/>
+        <line x1="132" y1="120" x2="200" y2="80"/>
+        <line x1="132" y1="120" x2="200" y2="160"/>
+        <line x1="132" y1="180" x2="200" y2="80"/>
+        <line x1="132" y1="180" x2="200" y2="160"/>
+        <line x1="132" y1="180" x2="200" y2="240"/>
+        <line x1="132" y1="240" x2="200" y2="160"/>
+        <line x1="132" y1="240" x2="200" y2="240"/>
+        <line x1="132" y1="300" x2="200" y2="240"/>
+      </g>
+    </g>
+
+    <!-- Apple silhouette (Bad Apple reference) -->
+    <g transform="translate(260, 120)">
+      <path d="M 0 -10 Q -15 -30 -5 -50 Q 0 -60 10 -55 Q 5 -40 10 -20 Q 15 0 30 10 Q 45 20 50 40 Q 55 60 45 75 Q 35 90 20 85 Q 5 80 -5 65 Q -15 50 -10 30 Z" 
+            fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.5"/>
+      <line x1="5" y1="-30" x2="15" y2="-45" stroke="url(#accent)" stroke-width="1.5" opacity="0.3"/>
+      <!-- ASCII art dots inside apple -->
+      <text x="0" y="35" font-family="monospace" font-size="9" fill="url(#accent)" opacity="0.3">.@@..</text>
+      <text x="0" y="48" font-family="monospace" font-size="9" fill="url(#accent)" opacity="0.4">@@.@@</text>
+      <text x="0" y="61" font-family="monospace" font-size="9" fill="url(#accent)" opacity="0.35">.@@..</text>
+    </g>
+
+    <!-- 3MB badge -->
+    <rect x="260" y="220" width="70" height="26" rx="13" fill="rgba(82,183,136,0.15)"/>
+    <text x="295" y="237" text-anchor="middle" font-family="monospace" font-size="12" fill="url(#accent)" font-weight="600">3.5M</text>
+    <rect x="260" y="252" width="70" height="22" rx="11" fill="rgba(82,183,136,0.1)"/>
+    <text x="295" y="267" text-anchor="middle" font-family="monospace" font-size="10" fill="rgba(82,183,136,0.5)">params</text>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="170" width="100" height="28" rx="14" fill="rgba(255,255,255,0.12)"/>
+    <text x="50" y="189" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="600">AI / ML</text>
+
+    <text x="0" y="235" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="800" fill="white" letter-spacing="-1">
+      Bad Apple ✦ LLaMA
+    </text>
+    <text x="0" y="280" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="rgba(255,255,255,0.8)">
+      et la crise de reproductibilité
+    </text>
+
+    <rect x="0" y="305" width="60" height="4" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="348" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" fill="rgba(255,255,255,0.65)">
+      Tout un clip dans 3,5M de paramètres — et ce que ça dit de NeurIPS
+    </text>
+
+    <g transform="translate(0, 400)">
+      <rect x="0" y="0" width="75" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="37.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">deep learning</text>
+      <rect x="85" y="0" width="85" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="127.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">reproducibility</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(82,183,136,0.05)"/>
+</svg>
