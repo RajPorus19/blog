@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0533"/>
+      <stop offset="100%" stop-color="#0d1b4a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="200" fill="rgba(124,58,237,0.03)"/>
+  <circle cx="1000" cy="550" r="250" fill="rgba(124,58,237,0.02)"/>
+  <circle cx="700" cy="-30" r="180" fill="rgba(124,58,237,0.04)"/>
+
+  <!-- Left: Magnifying glass over JIT code -->
+  <g transform="translate(60, 90)">
+    <!-- Magnifying glass -->
+    <g transform="translate(40, 20)">
+      <!-- Handle -->
+      <line x1="180" y1="180" x2="260" y2="260" stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-linecap="round"/>
+      <!-- Lens -->
+      <circle cx="120" cy="110" r="100" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4"/>
+      <circle cx="120" cy="110" r="95" fill="rgba(124,58,237,0.06)"/>
+    </g>
+
+    <!-- Code inside lens -->
+    <g transform="translate(55, 55)" font-family="monospace" font-size="12">
+      <text x="30" y="80" fill="rgba(255,255,255,0.3)">local function hot_loop()</text>
+      <text x="30" y="98" fill="rgba(255,255,255,0.4)">  for i = 1, 1e6 do</text>
+      <text x="30" y="116" fill="rgba(255,255,255,0.25)">    result = compute(i)</text>
+      <text x="30" y="134" fill="rgba(255,255,255,0.4)">  end</text>
+      <text x="30" y="152" fill="rgba(255,255,255,0.3)">end</text>
+      <!-- NYI highlight -->
+      <line x1="28" y1="114" x2="200" y2="114" stroke="#7c3aed" stroke-width="12" opacity="0.3"/>
+    </g>
+
+    <!-- Speed degradation indicator -->
+    <g transform="translate(10, 330)">
+      <!-- Arrow dropping -->
+      <line x1="30" y1="0" x2="200" y2="70" stroke="rgba(124,58,237,0.3)" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="200" y="80" font-family="monospace" font-size="13" fill="#a78bfa" opacity="0.7">20x slower</text>
+      <!-- Small flame -->
+      <g transform="translate(230, 55)" opacity="0.4">
+        <circle cx="0" cy="0" r="3" fill="#a78bfa"/>
+        <circle cx="-3" cy="-3" r="2" fill="#7c3aed"/>
+        <circle cx="2" cy="-4" r="1.5" fill="#a78bfa"/>
+      </g>
+    </g>
+
+    <!-- Moon representing Lua -->
+    <g transform="translate(290, 350)" opacity="0.15">
+      <circle cx="0" cy="0" r="20" fill="white"/>
+      <circle cx="6" cy="-4" r="16" fill="#0d1b4a"/>
+    </g>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="170" width="100" height="28" rx="14" fill="rgba(255,255,255,0.12)"/>
+    <text x="50" y="189" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="600">PERFORMANCE</text>
+
+    <text x="0" y="235" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="46" font-weight="800" fill="white" letter-spacing="-1.5">
+      Le bug LuaJIT qui
+    </text>
+    <text x="0" y="285" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="34" font-weight="700" fill="rgba(255,255,255,0.85)">
+      empoisonnait les boucles
+    </text>
+
+    <rect x="0" y="308" width="60" height="4" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="350" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" fill="rgba(255,255,255,0.65)">
+      Et pourquoi la communauté Lua doit apprendre à évoluer
+    </text>
+
+    <g transform="translate(0, 410)">
+      <rect x="0" y="0" width="55" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="27.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">luajit</text>
+      <rect x="65" y="0" width="55" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="92.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">debug</text>
+      <rect x="130" y="0" width="80" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="170" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">community</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(124,58,237,0.05)"/>
+</svg>

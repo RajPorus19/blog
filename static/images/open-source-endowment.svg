@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d3320"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="100%" stop-color="#58d68d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="100" cy="80" r="220" fill="rgba(46,204,113,0.03)"/>
+  <circle cx="1150" cy="550" r="280" fill="rgba(46,204,113,0.02)"/>
+  <circle cx="600" cy="300" r="350" fill="rgba(46,204,113,0.02)"/>
+
+  <!-- Left: Endowment tree / growth illustration -->
+  <g transform="translate(50, 80)">
+    <!-- Ground/foundation -->
+    <rect x="20" y="380" width="350" height="8" rx="4" fill="rgba(46,204,113,0.15)"/>
+
+    <!-- Tree trunk (endowment structure) -->
+    <rect x="165" y="180" width="30" height="200" rx="4" fill="rgba(46,204,113,0.2)"/>
+
+    <!-- Root branches (donors) -->
+    <g opacity="0.5">
+      <line x1="180" y1="370" x2="80" y2="410" stroke="rgba(46,204,113,0.3)" stroke-width="3"/>
+      <line x1="180" y1="370" x2="180" y2="420" stroke="rgba(46,204,113,0.3)" stroke-width="3"/>
+      <line x1="180" y1="370" x2="280" y2="410" stroke="rgba(46,204,113,0.3)" stroke-width="3"/>
+    </g>
+
+    <!-- Canopy (beneficiaries - projects funded) -->
+    <g opacity="0.6">
+      <circle cx="130" cy="140" r="40" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+      <circle cx="230" cy="120" r="35" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+      <circle cx="180" cy="90" r="45" fill="rgba(46,204,113,0.12)" stroke="rgba(46,204,113,0.25)" stroke-width="1"/>
+      <circle cx="100" cy="100" r="30" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+      <circle cx="260" cy="170" r="25" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+    </g>
+
+    <!-- Small project icons in canopy -->
+    <g opacity="0.4">
+      <text x="170" y="87" font-family="system-ui" font-size="12" fill="rgba(255,255,255,0.5)">curl</text>
+      <text x="220" y="118" font-family="system-ui" font-size="10" fill="rgba(255,255,255,0.4)">Vue</text>
+      <text x="125" y="138" font-family="system-ui" font-size="10" fill="rgba(255,255,255,0.4)">Hashi</text>
+      <text x="255" y="168" font-family="system-ui" font-size="9" fill="rgba(255,255,255,0.35)">Elastic</text>
+    </g>
+
+    <!-- $750K floating -->
+    <g transform="translate(50, 180)">
+      <rect x="0" y="0" width="100" height="32" rx="8" fill="rgba(46,204,113,0.15)" stroke="rgba(46,204,113,0.3)" stroke-width="1"/>
+      <text x="50" y="22" text-anchor="middle" font-family="monospace" font-size="16" fill="rgba(46,204,113,0.9)" font-weight="700">$750K+</text>
+    </g>
+
+    <!-- 60+ donors -->
+    <g transform="translate(50, 430)">
+      <text x="0" y="0" font-family="system-ui" font-size="12" fill="rgba(255,255,255,0.25)">60+ donateurs fondateurs</text>
+    </g>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="170" width="95" height="28" rx="14" fill="rgba(255,255,255,0.12)"/>
+    <text x="47.5" y="189" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="600">OPEN SOURCE</text>
+
+    <text x="0" y="235" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="white" letter-spacing="-1">
+      Un fonds de dotation
+    </text>
+    <text x="0" y="280" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="white" letter-spacing="-1">
+      pour l'open source
+    </text>
+
+    <rect x="0" y="305" width="60" height="4" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="350" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" fill="rgba(255,255,255,0.65)">
+      $750K et une nouvelle façon de financer le logiciel libre — sans VC, sans pubs
+    </text>
+
+    <g transform="translate(0, 410)">
+      <rect x="0" y="0" width="55" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="27.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">foss</text>
+      <rect x="65" y="0" width="80" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="105" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">funding</text>
+      <rect x="155" y="0" width="80" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="195" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">community</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(46,204,113,0.05)"/>
+</svg>

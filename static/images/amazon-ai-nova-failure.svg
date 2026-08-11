@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1729"/>
+      <stop offset="100%" stop-color="#1a2744"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0883e"/>
+      <stop offset="100%" stop-color="#ff6b35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="80" cy="100" r="250" fill="rgba(240,136,62,0.03)"/>
+  <circle cx="1100" cy="500" r="300" fill="rgba(240,136,62,0.02)"/>
+  <circle cx="500" cy="-50" r="200" fill="rgba(240,136,62,0.04)"/>
+
+  <!-- Left: Crumbling AWS tower illustration -->
+  <g transform="translate(60, 90)">
+    <!-- AWS cube (fractured) -->
+    <g transform="translate(60, 40)">
+      <!-- Main cube fragmenting -->
+      <rect x="0" y="0" width="260" height="260" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <!-- Fracture lines -->
+      <line x1="130" y1="0" x2="110" y2="130" stroke="rgba(240,136,62,0.2)" stroke-width="1.5"/>
+      <line x1="110" y1="130" x2="150" y2="260" stroke="rgba(240,136,62,0.2)" stroke-width="1.5"/>
+      <line x1="130" y1="130" x2="260" y2="130" stroke="rgba(240,136,62,0.15)" stroke-width="1.5"/>
+      <!-- Falling fragment -->
+      <polygon points="150,130 190,110 200,150 160,170" fill="rgba(240,136,62,0.15)" stroke="rgba(240,136,62,0.3)" stroke-width="1"/>
+      <!-- Nova logo (fading) -->
+      <text x="130" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" fill="rgba(255,255,255,0.08)" font-weight="800" letter-spacing="8">NOVA</text>
+    </g>
+
+    <!-- Competitors shadows (OpenAI, Google, Anthropic rising) -->
+    <g transform="translate(340, 20)" opacity="0.5">
+      <rect x="0" y="120" width="50" height="180" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <rect x="15" y="180" width="20" height="120" rx="3" fill="rgba(255,255,255,0.06)"/>
+      <text x="25" y="140" text-anchor="middle" font-family="system-ui" font-size="8" fill="rgba(255,255,255,0.3)">GPT</text>
+    </g>
+    <g transform="translate(350, 40)" opacity="0.4">
+      <rect x="0" y="80" width="50" height="200" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <rect x="15" y="120" width="20" height="160" rx="3" fill="rgba(255,255,255,0.05)"/>
+      <text x="25" y="100" text-anchor="middle" font-family="system-ui" font-size="8" fill="rgba(255,255,255,0.25)">CL</text>
+    </g>
+
+    <!-- AWS logo fragments -->
+    <g transform="translate(10, 360)" opacity="0.2">
+      <text x="0" y="0" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.4)">$90B cloud revenue</text>
+      <text x="0" y="18" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.2)">0 winning AI models</text>
+    </g>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="170" width="80" height="28" rx="14" fill="rgba(255,255,255,0.12)"/>
+    <text x="40" y="189" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="600">BIG TECH</text>
+
+    <text x="0" y="235" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="white" letter-spacing="-1.5">
+      Amazon démantèle
+    </text>
+    <text x="0" y="285" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="white" letter-spacing="-1.5">
+      sa division IA
+    </text>
+
+    <rect x="0" y="310" width="60" height="4" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="355" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" fill="rgba(255,255,255,0.65)">
+      Pourquoi le géant du cloud a perdu la guerre de l'IA générative
+    </text>
+
+    <g transform="translate(0, 410)">
+      <rect x="0" y="0" width="65" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="32.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">amazon</text>
+      <rect x="75" y="0" width="35" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="92.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">ai</text>
+      <rect x="120" y="0" width="70" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="155" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">strategy</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(240,136,62,0.05)"/>
+</svg>
