@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#2d1b69"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cfc"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="gemma" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="240" fill="rgba(124,92,252,0.04)"/>
+  <circle cx="1100" cy="550" r="300" fill="rgba(245,158,11,0.03)"/>
+  <circle cx="600" cy="-50" r="180" fill="rgba(124,92,252,0.05)"/>
+
+  <!-- Left: Translation filter illustration -->
+  <g transform="translate(40, 80)">
+    <!-- Left bubble (verbose Claude) -->
+    <rect x="0" y="30" width="160" height="90" rx="16" fill="rgba(124,92,252,0.12)" stroke="rgba(124,92,252,0.25)" stroke-width="1.5"/>
+    <text x="12" y="55" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.35)">I would be delighted to</text>
+    <text x="12" y="70" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.35)">assist you with that</text>
+    <text x="12" y="85" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.25)">request — let me first</text>
+    <text x="12" y="100" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.25)">clarify a few things...</text>
+    <!-- Bubble tail -->
+    <path d="M160 110 L185 130 L160 120" fill="rgba(124,92,252,0.1)" stroke="rgba(124,92,252,0.2)" stroke-width="1"/>
+
+    <!-- Translation arrow / filter in center -->
+    <g transform="translate(200, 30)">
+      <rect x="0" y="15" width="80" height="60" rx="12" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
+      <!-- Gear/processor icon -->
+      <circle cx="40" cy="35" r="12" fill="none" stroke="rgba(245,158,11,0.4)" stroke-width="2"/>
+      <circle cx="40" cy="35" r="5" fill="none" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+      <text x="40" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="rgba(245,158,11,0.5)" font-weight="600">GEMMA 4</text>
+      <!-- Local indicator -->
+      <rect x="22" y="70" width="36" height="12" rx="6" fill="rgba(245,158,11,0.08)"/>
+      <text x="40" y="79" text-anchor="middle" font-family="system-ui" font-size="7" fill="rgba(245,158,11,0.4)">local</text>
+    </g>
+
+    <!-- Arrow connectors -->
+    <g stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,3">
+      <line x1="160" y1="70" x2="200" y2="55"/>
+      <line x1="160" y1="85" x2="200" y2="65"/>
+    </g>
+    <g stroke="rgba(255,255,255,0.2)" stroke-width="2">
+      <line x1="280" y1="55" x2="320" y2="55"/>
+      <polygon points="318,50 328,55 318,60" fill="rgba(255,255,255,0.25)"/>
+      <line x1="280" y1="75" x2="320" y2="75"/>
+      <polygon points="318,70 328,75 318,80" fill="rgba(255,255,255,0.25)"/>
+    </g>
+
+    <!-- Right bubble (plain English) -->
+    <rect x="330" y="30" width="130" height="70" rx="16" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.25)" stroke-width="1.5"/>
+    <text x="342" y="58" font-family="monospace" font-size="11" fill="rgba(52,211,153,0.7)" font-weight="700">Sure — here's</text>
+    <text x="342" y="74" font-family="monospace" font-size="11" fill="rgba(52,211,153,0.7)" font-weight="700">how you fix it:</text>
+    <!-- Checkmark -->
+    <circle cx="460" cy="65" r="10" fill="rgba(52,211,153,0.15)"/>
+    <text x="456" y="70" font-family="system-ui" font-size="12" fill="rgba(52,211,153,0.6)">✓</text>
+
+    <!-- Ollama logo nod at bottom -->
+    <g transform="translate(100, 200)" opacity="0.3">
+      <circle cx="0" cy="0" r="16" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+      <text x="0" y="28" text-anchor="middle" font-family="system-ui" font-size="9" fill="rgba(255,255,255,0.25)" font-weight="600">OLLAMA</text>
+    </g>
+
+    <!-- Plugin chip floating -->
+    <g transform="translate(300, 190)" opacity="0.25">
+      <rect x="0" y="0" width="90" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
+      <text x="45" y="16" text-anchor="middle" font-family="system-ui" font-size="9" fill="rgba(255,255,255,0.4)" font-weight="600">OPEN SOURCE</text>
+    </g>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="160" width="95" height="28" rx="14" fill="rgba(255,255,255,0.12)"/>
+    <text x="47.5" y="179" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.8)" font-weight="600">LLM TOOLS</text>
+
+    <text x="0" y="230" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="white" letter-spacing="-1">
+      Arrête de parler
+    </text>
+    <text x="0" y="278" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="white" letter-spacing="-1">
+      Claudish, Claude
+    </text>
+
+    <rect x="0" y="302" width="60" height="4" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="348" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" fill="rgba(255,255,255,0.65)">
+      Un plugin open-source traduit le blabla de Claude en anglais simple — avec Gemma 4 en local
+    </text>
+
+    <g transform="translate(0, 410)">
+      <rect x="0" y="0" width="65" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="32.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">claude</text>
+      <rect x="75" y="0" width="60" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="105" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">plugin</text>
+      <rect x="145" y="0" width="50" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="170" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)">local</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(124,92,252,0.05)"/>
+</svg>
