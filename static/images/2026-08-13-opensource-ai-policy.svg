@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1033"/>
+      <stop offset="100%" stop-color="#281a4a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="220" fill="rgba(139,92,246,0.06)"/>
+  <circle cx="1140" cy="560" r="260" fill="rgba(139,92,246,0.05)"/>
+  <circle cx="540" cy="-40" r="180" fill="rgba(167,139,250,0.06)"/>
+
+  <!-- Left: scales of justice / two doors -->
+  <g transform="translate(50, 90)">
+    <!-- balance beam -->
+    <line x1="30" y1="40" x2="310" y2="40" stroke="rgba(167,139,250,0.5)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="170" y1="40" x2="170" y2="70" stroke="rgba(167,139,250,0.4)" stroke-width="3"/>
+    <!-- left pan: human hand / code -->
+    <g transform="translate(30, 40)">
+      <path d="M-20 0 Q-20 40 0 52 L30 52 Q48 40 48 0" fill="none" stroke="rgba(167,139,250,0.5)" stroke-width="3"/>
+      <text x="14" y="32" text-anchor="middle" font-family="system-ui" font-size="13" fill="rgba(255,255,255,0.6)" font-weight="700">humain</text>
+    </g>
+    <!-- right pan: robot / AI -->
+    <g transform="translate(262, 40)">
+      <path d="M-20 0 Q-20 40 0 52 L30 52 Q48 40 48 0" fill="none" stroke="rgba(139,92,246,0.5)" stroke-width="3"/>
+      <text x="14" y="32" text-anchor="middle" font-family="system-ui" font-size="13" fill="rgba(255,255,255,0.6)" font-weight="700">IA</text>
+    </g>
+    <!-- question mark between -->
+    <g transform="translate(170, 140)">
+      <circle cx="0" cy="0" r="26" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.35)" stroke-width="2"/>
+      <text x="0" y="11" text-anchor="middle" font-family="system-ui" font-size="34" fill="rgba(167,139,250,0.8)" font-weight="800">?</text>
+    </g>
+    <!-- copyright symbol -->
+    <g transform="translate(160, 220)">
+      <text x="0" y="0" text-anchor="middle" font-family="system-ui" font-size="34" fill="rgba(167,139,250,0.4)" font-weight="800">©</text>
+      <text x="0" y="26" text-anchor="middle" font-family="system-ui" font-size="12" fill="rgba(255,255,255,0.4)">qui possède le code ?</text>
+    </g>
+    <!-- policy doc -->
+    <g transform="translate(60, 290)">
+      <rect x="0" y="0" width="150" height="60" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(167,139,250,0.25)" stroke-width="1.5"/>
+      <line x1="12" y1="16" x2="90" y2="16" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+      <line x1="12" y1="26" x2="120" y2="26" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+      <line x1="12" y1="36" x2="110" y2="36" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+      <line x1="12" y1="46" x2="70" y2="46" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+      <text x="8" y="72" font-family="system-ui" font-size="12" fill="rgba(167,139,250,0.5)" font-weight="700">POLICY v0.1 — brouillon</text>
+    </g>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="140" width="150" height="28" rx="14" fill="rgba(255,255,255,0.14)"/>
+    <text x="75" y="159" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.85)" font-weight="600">OPEN SOURCE · IA</text>
+
+    <text x="0" y="222" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="47" font-weight="800" fill="white" letter-spacing="-1.5">
+      Faut-il bannir l'IA
+    </text>
+    <text x="0" y="272" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="47" font-weight="800" fill="white" letter-spacing="-1.5">
+      de l'open source ?
+    </text>
+
+    <rect x="0" y="300" width="70" height="5" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="346" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="21" fill="rgba(255,255,255,0.68)">
+      Le débat qui déchire r/opensource — et la question
+    </text>
+    <text x="0" y="374" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="21" fill="rgba(255,255,255,0.68)">
+      du copyright du code généré par machine
+    </text>
+
+    <g transform="translate(0, 430)">
+      <rect x="0" y="0" width="75" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="37.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">governance</text>
+      <rect x="85" y="0" width="75" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="122.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">copyright</text>
+      <rect x="170" y="0" width="55" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="197.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">vibe-code</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(139,92,246,0.06)"/>
+</svg>

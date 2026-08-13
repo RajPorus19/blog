@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17121f"/>
+      <stop offset="100%" stop-color="#241a14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="90" cy="90" r="220" fill="rgba(251,146,60,0.05)"/>
+  <circle cx="1130" cy="560" r="260" fill="rgba(251,146,60,0.04)"/>
+  <circle cx="620" cy="-40" r="180" fill="rgba(251,191,36,0.05)"/>
+
+  <!-- Left: code editor with bright-orange comment -->
+  <g transform="translate(45, 70)">
+    <rect x="0" y="0" width="330" height="250" rx="12" fill="rgba(0,0,0,0.28)" stroke="rgba(255,255,255,0.10)" stroke-width="1.5"/>
+    <!-- editor top bar -->
+    <rect x="0" y="0" width="330" height="26" rx="12" fill="rgba(255,255,255,0.05)"/>
+    <circle cx="16" cy="13" r="5" fill="rgba(255,95,86,0.6)"/>
+    <circle cx="32" cy="13" r="5" fill="rgba(255,189,46,0.6)"/>
+    <circle cx="48" cy="13" r="5" fill="rgba(39,201,63,0.6)"/>
+    <rect x="0" y="26" width="330" height="224" rx="0" fill="transparent"/>
+
+    <!-- code lines -->
+    <g font-family="monospace" font-size="14">
+      <text x="16" y="56" fill="rgba(255,255,255,0.30)">fn heartbeat() {</text>
+      <text x="32" y="80" fill="rgba(255,255,255,0.38)">  const INTERVAL: u64 = 5;</text>
+      <text x="32" y="106" fill="rgba(255,255,255,0.35)">  loop {</text>
+      <text x="48" y="132" fill="rgba(255,255,255,0.38)">    send_ping();</text>
+      <text x="48" y="158" fill="rgba(255,255,255,0.38)">    sleep(INTERVAL);</text>
+      <text x="32" y="184" fill="rgba(255,255,255,0.35)">  }</text>
+      <text x="16" y="210" fill="rgba(255,255,255,0.30)">}</text>
+    </g>
+
+    <!-- the bright-orange comment, highlighted -->
+    <rect x="14" y="88" width="302" height="34" rx="4" fill="rgba(251,146,60,0.10)"/>
+    <text x="20" y="112" font-family="monospace" font-size="14" fill="#fb923c" font-weight="700">// 5s choisi après load-test : au-delà,</text>
+    <text x="20" y="116" font-family="monospace" font-size="14" fill="#fb923c" font-weight="700">   // le LB tue les conns inactives</text>
+  </g>
+
+  <!-- WHY? speech bubble -->
+  <g transform="translate(80, 350)">
+    <path d="M0 0 L30 0 L38 -14 L46 0 L120 0 Q140 0 140 16 L140 40 Q140 56 120 56 L12 56 Q-8 56 -8 40 L-8 16 Q-8 0 0 0 Z" fill="rgba(251,146,60,0.10)" stroke="rgba(251,146,60,0.25)" stroke-width="1.5"/>
+    <text x="66" y="26" text-anchor="middle" font-family="system-ui" font-size="15" fill="rgba(251,191,36,0.8)" font-weight="700">le POURQUOI,</text>
+    <text x="66" y="44" text-anchor="middle" font-family="system-ui" font-size="15" fill="rgba(251,191,36,0.8)" font-weight="700">pas le COMMENT</text>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="150" width="120" height="28" rx="14" fill="rgba(255,255,255,0.14)"/>
+    <text x="60" y="169" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.85)" font-weight="600">CRAFT · CODE</text>
+
+    <text x="0" y="228" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="white" letter-spacing="-1.5">
+      Les commentaires
+    </text>
+    <text x="0" y="278" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="white" letter-spacing="-1.5">
+      que le code
+    </text>
+    <text x="0" y="328" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="white" letter-spacing="-1.5">
+      ne peut pas porter
+    </text>
+
+    <rect x="0" y="352" width="70" height="5" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="396" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="21" fill="rgba(255,255,255,0.68)">
+      Et pourquoi les agents IA en ont plus besoin que nous
+    </text>
+
+    <g transform="translate(0, 440)">
+      <rect x="0" y="0" width="70" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="35" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">comments</text>
+      <rect x="80" y="0" width="60" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="110" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">llm</text>
+      <rect x="150" y="0" width="55" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="177.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">adr</text>
+      <rect x="215" y="0" width="55" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="242.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">yadr</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(251,146,60,0.05)"/>
+</svg>
