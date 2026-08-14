@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04170c"/>
+      <stop offset="55%" stop-color="#072a16"/>
+      <stop offset="100%" stop-color="#0a3d1f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#76b900"/>
+      <stop offset="100%" stop-color="#a3e635"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="220" fill="rgba(118,185,0,0.05)"/>
+  <circle cx="1120" cy="560" r="260" fill="rgba(118,185,0,0.04)"/>
+  <circle cx="520" cy="-40" r="170" fill="rgba(163,230,53,0.05)"/>
+
+  <!-- Left: GPU + financing chart illustration -->
+  <g transform="translate(40, 70)">
+    <!-- $500B badge -->
+    <rect x="0" y="0" width="150" height="38" rx="10" fill="rgba(118,185,0,0.12)" stroke="rgba(163,230,53,0.3)" stroke-width="1"/>
+    <text x="75" y="16" text-anchor="middle" font-family="system-ui" font-size="11" fill="rgba(163,230,53,0.6)">FINANCING</text>
+    <text x="75" y="32" text-anchor="middle" font-family="monospace" font-size="15" fill="rgba(163,230,53,0.85)" font-weight="700">$500B</text>
+
+    <!-- GPU die -->
+    <g transform="translate(30, 70)">
+      <rect x="0" y="0" width="200" height="150" rx="12" fill="rgba(118,185,0,0.08)" stroke="rgba(163,230,53,0.35)" stroke-width="2"/>
+      <rect x="22" y="22" width="156" height="60" rx="6" fill="rgba(118,185,0,0.16)"/>
+      <text x="100" y="58" text-anchor="middle" font-family="monospace" font-size="18" fill="rgba(163,230,53,0.9)" font-weight="700">GPU</text>
+      <g stroke="rgba(163,230,53,0.4)" stroke-width="3">
+        <line x1="60" y1="100" x2="140" y2="100"/>
+        <line x1="60" y1="112" x2="140" y2="112"/>
+        <line x1="60" y1="124" x2="140" y2="124"/>
+      </g>
+      <!-- dollar signs over die -->
+      <text x="100" y="104" text-anchor="middle" font-family="system-ui" font-size="16" fill="rgba(255,255,255,0.6)" font-weight="700">$ $ $</text>
+    </g>
+
+    <!-- retirement fund icon -->
+    <g transform="translate(240, 130)">
+      <path d="M0 50 L0 20 L60 0 L120 20 L120 50 Z" fill="rgba(163,230,53,0.12)" stroke="rgba(163,230,53,0.4)" stroke-width="2"/>
+      <text x="60" y="32" text-anchor="middle" font-family="system-ui" font-size="14" fill="rgba(163,230,53,0.85)" font-weight="700">$</text>
+      <text x="60" y="74" text-anchor="middle" font-family="system-ui" font-size="11" fill="rgba(255,255,255,0.5)">retirement</text>
+    </g>
+
+    <!-- rising chart -->
+    <g transform="translate(30, 280)">
+      <polyline points="0,90 40,70 80,78 120,44 160,50 200,20" fill="none" stroke="rgba(163,230,53,0.7)" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="200" cy="20" r="5" fill="rgba(163,230,53,0.9)"/>
+      <line x1="0" y1="92" x2="210" y2="92" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+      <text x="0" y="120" font-family="system-ui" font-size="12" fill="rgba(255,255,255,0.5)">toll road, or depreciating pile?</text>
+    </g>
+  </g>
+
+  <!-- Right side -->
+  <g transform="translate(420, 0)">
+    <rect x="0" y="150" width="130" height="28" rx="14" fill="rgba(255,255,255,0.14)"/>
+    <text x="65" y="169" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.85)" font-weight="600">FINANCE · IA</text>
+
+    <text x="0" y="228" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="white" letter-spacing="-1.5">
+      500 Md$ pour l'IA,
+    </text>
+    <text x="0" y="278" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="white" letter-spacing="-1.5">
+      financés par
+    </text>
+    <text x="0" y="328" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="white" letter-spacing="-1.5">
+      votre retraite
+    </text>
+
+    <rect x="0" y="352" width="80" height="5" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="396" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="21" fill="rgba(255,255,255,0.68)">
+      Nvidia, BlackRock, KKR : le financement circulaire du boom
+    </text>
+
+    <g transform="translate(0, 440)">
+      <rect x="0" y="0" width="70" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="35" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">nvidia</text>
+      <rect x="80" y="0" width="75" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="117.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">finance</text>
+      <rect x="165" y="0" width="95" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="212.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">gouvernance</text>
+      <rect x="270" y="0" width="55" height="26" rx="13" fill="rgba(255,255,255,0.12)"/>
+      <text x="297.5" y="17" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.72)">ia</text>
+    </g>
+  </g>
+
+  <path d="M0 560 Q200 540 400 560 Q600 580 800 560 Q1000 540 1200 560 L1200 630 L0 630 Z" fill="rgba(118,185,0,0.06)"/>
+</svg>
